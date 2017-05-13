@@ -1,0 +1,1106 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.4)  6 MAY 2017 20:05
+entering extended mode
+**./FinalVersionMaster.tex
+(FinalVersionMaster.tex
+LaTeX2e <2017/01/01> patch level 1
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+(C:\Users\USER\Desktop\latex\tex\latex\base\book.cls
+Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
+(C:\Users\USER\Desktop\latex\tex\latex\base\fleqn.clo
+File: fleqn.clo 2016/12/29 v1.2a Standard LaTeX option (flush left equations)
+\mathindent=\dimen102
+Applying: [2015/01/01] Make \[ robust on input line 50.
+LaTeX Info: Redefining \[ on input line 51.
+Already applied: [0000/00/00] Make \[ robust on input line 62.
+Applying: [2015/01/01] Make \] robust on input line 74.
+LaTeX Info: Redefining \] on input line 75.
+Already applied: [0000/00/00] Make \] robust on input line 83.
+)
+(C:\Users\USER\Desktop\latex\tex\latex\base\bk10.clo
+File: bk10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen103
+)
+(C:\Users\USER\Desktop\latex\tex\latex\amsmath\amsmath.sty
+Package: amsmath 2016/11/05 v2.16a AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\USER\Desktop\latex\tex\latex\amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(C:\Users\USER\Desktop\latex\tex\latex\amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks14
+\ex@=\dimen104
+))
+(C:\Users\USER\Desktop\latex\tex\latex\amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen105
+)
+(C:\Users\USER\Desktop\latex\tex\latex\amsmath\amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks15
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks16
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(C:\Users\USER\Desktop\latex\tex\latex\amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Users\USER\Desktop\latex\tex\latex\amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(C:\Users\USER\Desktop\latex\tex\latex\pdfpages\pdfpages.sty
+Package: pdfpages 2017/01/14 v0.5h Insert pages of external PDF documents (AM)
+
+(C:\Users\USER\Desktop\latex\tex\latex\base\ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\USER\Desktop\latex\tex\latex\tools\calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count100
+\calc@Bcount=\count101
+\calc@Adimen=\dimen113
+\calc@Bdimen=\dimen114
+\calc@Askip=\skip46
+\calc@Bskip=\skip47
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count102
+\calc@Cskip=\skip48
+)
+(C:\Users\USER\Desktop\latex\tex\latex\eso-pic\eso-pic.sty
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+
+(C:\Users\USER\Desktop\latex\tex\generic\oberdiek\atbegshi.sty
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+
+(C:\Users\USER\Desktop\latex\tex\generic\oberdiek\infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(C:\Users\USER\Desktop\latex\tex\generic\oberdiek\ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\USER\Desktop\latex\tex\generic\oberdiek\ifpdf.sty
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+))
+(C:\Users\USER\Desktop\latex\tex\latex\graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+(C:\Users\USER\Desktop\latex\tex\latex\xcolor\xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(C:\Users\USER\Desktop\latex\tex\latex\graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(C:\Users\USER\Desktop\latex\tex\latex\graphics-def\pdftex.def
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+\Gread@gobject=\count103
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+))
+(C:\Users\USER\Desktop\latex\tex\latex\graphics\graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\USER\Desktop\latex\tex\latex\graphics\graphics.sty
+Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\USER\Desktop\latex\tex\latex\graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(C:\Users\USER\Desktop\latex\tex\latex\graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+)
+\Gin@req@height=\dimen115
+\Gin@req@width=\dimen116
+)
+\AM@pagewidth=\dimen117
+\AM@pageheight=\dimen118
+
+(C:\Users\USER\Desktop\latex\tex\latex\pdfpages\pppdftex.def
+File: pppdftex.def 2017/01/14 v0.5h Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box28
+\AM@global@opts=\toks20
+\AM@toc@title=\toks21
+\c@AM@survey=\count104
+\AM@templatesizebox=\box29
+)
+(C:\Users\USER\Desktop\latex\tex\latex\graphics\rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+\c@r@tfl@t=\count105
+\rotFPtop=\skip49
+\rotFPbot=\skip50
+\rot@float@box=\box30
+\rot@mess@toks=\toks22
+)
+(C:\Users\USER\Desktop\latex\tex\latex\extsizes\extsizes.sty
+Package: extsizes 1996/10/08 v1.0 Non Standard LaTeX Package
+
+
+Package ExtSizes Warning: It is better to use one of the extsizes classes,
+ if you can.
+
+(C:\Users\USER\Desktop\latex\tex\latex\base\size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+))
+(C:\Users\USER\Desktop\latex\tex\latex\graphics\lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+(C:\Users\USER\Desktop\latex\tex\latex\amscls\amsthm.sty
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks23
+\thm@bodyfont=\toks24
+\thm@headfont=\toks25
+\thm@notefont=\toks26
+\thm@headpunct=\toks27
+\thm@preskip=\skip51
+\thm@postskip=\skip52
+\thm@headsep=\skip53
+\dth@everypar=\toks28
+)
+(C:\Users\USER\Desktop\latex\tex\latex\base\makeidx.sty
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
+(C:\Users\USER\Desktop\latex\tex\latex\fmtcount\fmtcount.sty
+Package: fmtcount 2015/05/05 v3.01
+
+(C:\Users\USER\Desktop\latex\tex\latex\xkeyval\xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(C:\Users\USER\Desktop\latex\tex\generic\xkeyval\xkeyval.tex
+(C:\Users\USER\Desktop\latex\tex\generic\xkeyval\xkvutils.tex
+\XKV@toks=\toks29
+\XKV@tempa@toks=\toks30
+)
+\XKV@depth=\count106
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(C:\Users\USER\Desktop\latex\tex\latex\etoolbox\etoolbox.sty
+Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count107
+)
+(C:\Users\USER\Desktop\latex\tex\latex\fmtcount\fcprefix.sty
+Package: fcprefix 2012/09/28
+
+(C:\Users\USER\Desktop\latex\tex\latex\fmtcount\fcnumparser.sty
+Package: fcnumparser 2012/09/28
+\fc@digit@counter=\count108
+))
+(C:\Users\USER\Desktop\latex\tex\generic\ifxetex\ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\c@padzeroesN=\count109
+\fc@tmpcatcode=\count110
+\@DT@modctr=\count111
+\@ordinalctr=\count112
+\@orgargctr=\count113
+\@strctr=\count114
+\@tmpstrctr=\count115
+\@DT@loopN=\count116
+\@DT@X=\count117
+
+(C:\Users\USER\Desktop\latex\tex\latex\fmtcount\fc-english.def
+File: fc-english.def 2013/08/17
+))
+(C:\Users\USER\Desktop\latex\tex\latex\base\textcomp.sty
+Package: textcomp 2017/01/24 v2.0c Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+
+(C:\Users\USER\Desktop\latex\tex\latex\base\ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
+(C:\Users\USER\Desktop\latex\tex\latex\fancyhdr\fancyhdr.sty
+Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
+\fancy@headwidth=\skip54
+\f@ncyO@elh=\skip55
+\f@ncyO@erh=\skip56
+\f@ncyO@olh=\skip57
+\f@ncyO@orh=\skip58
+\f@ncyO@elf=\skip59
+\f@ncyO@erf=\skip60
+\f@ncyO@olf=\skip61
+\f@ncyO@orf=\skip62
+)
+(C:\Users\USER\Desktop\latex\tex\latex\txfonts\txfonts.sty
+Package: txfonts 2008/01/22 v3.2.1
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 21.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/txr/m/n on input line 21.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/txr/m/n on input line 21.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/txr/m/n --> OT1/txr/bx/n on input line 22.
+\symitalic=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `italic' in version `bold'
+(Font)                  OT1/txr/m/it --> OT1/txr/bx/it on input line 26.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/txr/bx/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/txr/bx/n on input line 29.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 30.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/txr/m/it on input line 30.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/txr/m/it on input line 30.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/txr/m/it --> OT1/txr/bx/it on input line 31.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 40.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/txss/m/n on input line 40.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/txss/m/n on input line 40.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/txss/m/n --> OT1/txss/b/n on input line 41.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/txtt/m/n on input line 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/txtt/m/n on input line 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/txtt/m/n --> OT1/txtt/b/n on input line 51.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 58.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/txmi/m/it on input line 58.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/txmi/m/it on input line 58.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/txmi/m/it --> OML/txmi/bx/it on input line 59.
+\symlettersA=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `lettersA' in version `bold'
+(Font)                  U/txmia/m/it --> U/txmia/bx/it on input line 67.
+LaTeX Font Info:    Redeclaring math alphabet \mathfrak on input line 70.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 77.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/txsy/m/n on input line 77.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/txsy/m/n on input line 77.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/txsy/m/n --> OMS/txsy/bx/n on input line 78.
+LaTeX Font Info:    Redeclaring symbol font `AMSa' on input line 93.
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `normal'
+(Font)                  U/msa/m/n --> U/txsya/m/n on input line 93.
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
+(Font)                  U/msa/m/n --> U/txsya/m/n on input line 93.
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
+(Font)                  U/txsya/m/n --> U/txsya/bx/n on input line 94.
+LaTeX Font Info:    Redeclaring symbol font `AMSb' on input line 102.
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `normal'
+(Font)                  U/msb/m/n --> U/txsyb/m/n on input line 102.
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
+(Font)                  U/msb/m/n --> U/txsyb/m/n on input line 102.
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
+(Font)                  U/txsyb/m/n --> U/txsyb/bx/n on input line 103.
+\symsymbolsC=\mathgroup8
+LaTeX Font Info:    Overwriting symbol font `symbolsC' in version `bold'
+(Font)                  U/txsyc/m/n --> U/txsyc/bx/n on input line 113.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 120.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/txex/m/n on input line 120.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/txex/m/n on input line 120.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/txex/m/n --> OMX/txex/bx/n on input line 121.
+\symlargesymbolsA=\mathgroup9
+LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `bold'
+(Font)                  U/txexa/m/n --> U/txexa/bx/n on input line 129.
+LaTeX Info: Redefining \not on input line 1043.
+LaTeX Info: Redefining \textsquare on input line 1063.
+LaTeX Info: Redefining \openbox on input line 1064.
+)
+(C:\Users\USER\Desktop\latex\tex\latex\algorithms\algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(C:\Users\USER\Desktop\latex\tex\latex\float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count118
+\float@exts=\toks31
+\float@box=\box31
+\@float@everytoks=\toks32
+\@floatcapt=\box32
+)
+\@float@every@algorithm=\toks33
+\c@algorithm=\count119
+)
+(C:\Users\USER\Desktop\latex\tex\latex\algorithms\algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count120
+\c@ALC@line=\count121
+\c@ALC@rem=\count122
+\c@ALC@depth=\count123
+\ALC@tlm=\skip63
+\algorithmicindent=\skip64
+)
+(C:\Users\USER\Desktop\latex\tex\latex\appendix\appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count124
+\c@@ppsavesec=\count125
+\c@@ppsaveapp=\count126
+)
+(C:\Users\USER\Desktop\latex\tex\latex\multirow\multirow.sty
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip65
+\multirow@cntb=\count127
+\multirow@dima=\skip66
+\bigstrutjot=\dimen119
+)
+(C:\Users\USER\Desktop\latex\tex\latex\minitoc\minitoc.sty
+Package: minitoc 2015/07/13 v61 Package minitoc
+
+(C:\Users\USER\Desktop\latex\tex\latex\minitoc\mtcmess.sty
+Package: mtcmess 2006/03/14
+)
+Package minitoc Info: I0001
+(minitoc)             *** minitoc package, version 61 ***.
+\tf@mtc=\write3
+\mtcindent=\skip67
+\mtcskipamount=\skip68
+Package minitoc Info: I0005
+(minitoc)             compatible with hyperref.
+Package minitoc Info: I0023
+(minitoc)             part level macros available.
+Package minitoc Info: I0003
+(minitoc)             chapter level macros available.
+\mtc@toks=\toks34
+\mtc@strutbox=\box33
+\mtc@hstrutbox=\box34
+Package minitoc Info: I0002
+(minitoc)             Autoconfiguration of extensions.
+\openout3 = `FinalVersionMaster.mtc0'.
+
+\openout3 = `FinalVersionMaster.mtc'.
+
+
+(FinalVersionMaster.mtc0)
+Package minitoc Info: I0012
+(minitoc)             Long extensions (Unix-like) will be used.
+Package minitoc Info: I0031
+(minitoc)             ==> this version is configured for UNIX-like 
+(minitoc)                 (long extensions) file names.
+\openout3 = `FinalVersionMaster.mtc'.
+
+\openout3 = `FinalVersionMaster.mtc0'.
+
+\c@mtc=\count128
+\c@minitocdepth=\count129
+\c@ptc=\count130
+\c@parttocdepth=\count131
+\ptcindent=\skip69
+Package minitoc Info: I0010
+(minitoc)             The english language is selected.
+(minitoc)              on input line 4909.
+
+(C:\Users\USER\Desktop\latex\tex\latex\minitoc\english.mld
+File: english.mld 2006/01/13
+)
+(C:\Users\USER\Desktop\latex\tex\latex\minitoc\english.mld
+File: english.mld 2006/01/13
+))
+(C:\Users\USER\Desktop\latex\tex\latex\slashbox\slashbox.sty
+slashbox style by K.Yasuoka, May 1993.
+\@slashboxa=\box35
+\@slashboxb=\box36
+\@slashboxc=\box37
+\@slashboxwd=\count132
+\@slashboxht=\count133
+\@slashsepl=\dimen120
+\@slashsepr=\dimen121
+) (C:\Users\USER\Desktop\latex\tex\latex\graphics\epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+\epsfxsize=\dimen122
+\epsfysize=\dimen123
+)
+(C:\Users\USER\Desktop\latex\tex\latex\oberdiek\epstopdf.sty
+Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
+
+(C:\Users\USER\Desktop\latex\tex\latex\oberdiek\epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(C:\Users\USER\Desktop\latex\tex\latex\oberdiek\grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(C:\Users\USER\Desktop\latex\tex\generic\oberdiek\kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+(C:\Users\USER\Desktop\latex\tex\latex\oberdiek\kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(C:\Users\USER\Desktop\latex\tex\generic\oberdiek\kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(C:\Users\USER\Desktop\latex\tex\generic\oberdiek\etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(C:\Users\USER\Desktop\latex\tex\generic\oberdiek\ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(C:\Users\USER\Desktop\latex\tex\generic\oberdiek\pdftexcmds.sty
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+))
+(C:\Users\USER\Desktop\latex\tex\latex\subfig\subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(C:\Users\USER\Desktop\latex\tex\latex\caption\caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(C:\Users\USER\Desktop\latex\tex\latex\caption\caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen124
+\captionmargin@=\dimen125
+\captionwidth=\dimen126
+\caption@tempdima=\dimen127
+\caption@indent=\dimen128
+\caption@parindent=\dimen129
+\caption@hangindent=\dimen130
+)
+\c@ContinuedFloat=\count134
+Package caption Info: float package is loaded.
+Package caption Info: rotating package is loaded.
+)
+\c@KVtest=\count135
+\sf@farskip=\skip70
+\sf@captopadj=\dimen131
+\sf@capskip=\skip71
+\sf@nearskip=\skip72
+\c@subfigure=\count136
+\c@subfigure@save=\count137
+\c@lofdepth=\count138
+\c@subtable=\count139
+\c@subtable@save=\count140
+\c@lotdepth=\count141
+\sf@top=\skip73
+\sf@bottom=\skip74
+)
+(C:\Users\USER\Desktop\latex\tex\latex\base\latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup10
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+(C:\Users\USER\Desktop\latex\tex\latex\amsfonts\euscript.sty
+Package: euscript 2009/06/22 v3.00 Euler Script fonts
+LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
+(Font)                  U/eus/m/n --> U/eus/b/n on input line 33.
+)
+(C:\Users\USER\Desktop\latex\tex\latex\lettrine\lettrine.sty
+File: lettrine.sty 2015/08/31 v1.9 (Daniel Flipo)
+\c@DefaultLines=\count142
+\c@DefaultDepth=\count143
+\DefaultFindent=\dimen132
+\DefaultNindent=\dimen133
+\DefaultSlope=\dimen134
+\DiscardVskip=\dimen135
+\L@lbox=\box38
+\L@tbox=\box39
+\c@L@lines=\count144
+\c@L@depth=\count145
+\L@Pindent=\dimen136
+\L@Findent=\dimen137
+\L@Nindent=\dimen138
+\L@lraise=\dimen139
+\L@first=\dimen140
+\L@next=\dimen141
+\L@slope=\dimen142
+\L@height=\dimen143
+\L@novskip=\dimen144
+\LettrineWidth=\dimen145
+\LettrineHeight=\dimen146
+\LettrineDepth=\dimen147
+
+Loading lettrine.cfg
+(C:\Users\USER\Desktop\latex\tex\latex\lettrine\lettrine.cfg))
+(C:\Users\USER\Desktop\latex\tex\latex\a4wide\a4wide.sty
+Package: a4wide 1994/08/30
+
+(C:\Users\USER\Desktop\latex\tex\latex\ntgclass\a4.sty
+Package: a4 2004/04/15 v1.2g A4 based page layout
+))
+(C:\Users\USER\Desktop\latex\tex\latex\tools\verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks35
+\verbatim@line=\toks36
+\verbatim@in@stream=\read1
+)
+(C:\Users\USER\Desktop\latex\tex\latex\tools\tabularx.sty
+Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
+
+(C:\Users\USER\Desktop\latex\tex\latex\tools\array.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen148
+\extrarowheight=\dimen149
+\NC@list=\toks37
+\extratabsurround=\skip75
+\backup@length=\skip76
+)
+\TX@col@width=\dimen150
+\TX@old@table=\dimen151
+\TX@old@col=\dimen152
+\TX@target=\dimen153
+\TX@delta=\dimen154
+\TX@cols=\count146
+\TX@ftn=\toks38
+)
+(C:\Users\USER\Desktop\latex\tex\latex\pict2e\pict2e.sty
+Package: pict2e 2016/02/05 v0.3b Improved picture commands (HjG,RN,JT)
+
+(C:\Users\USER\Desktop\latex\tex\latex\pict2e\pict2e.cfg
+File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
+)
+Package pict2e Info: Driver file: pdftex.def on input line 119.
+Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 121.
+
+(C:\Users\USER\Desktop\latex\tex\latex\pict2e\p2e-pdftex.def
+File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
+)
+\pIIe@GRAPH=\toks39
+\@arclen=\dimen155
+\@arcrad=\dimen156
+\@tempdimd=\dimen157
+)
+(C:\Users\USER\Desktop\latex\tex\latex\floatflt\floatflt.sty
+Package: floatflt 1997/07/16 v. 1.31
+\c@OptionTest=\count147
+\figbox=\box40
+\tabbox=\box41
+\pagebox=\box42
+\ffigcount=\count148
+\ftabcount=\count149
+\fftest=\count150
+\hangcount=\count151
+\nosuccesstryfig=\count152
+\nosuccesstrytab=\count153
+\figgutter=\dimen158
+\tabgutter=\dimen159
+\htdone=\dimen160
+\pageht=\dimen161
+\startpageht=\dimen162
+\tabbredd=\dimen163
+\floatfltwidth=\dimen164
+\fltitemwidth=\dimen165
+\outputpretest=\toks40
+)
+(C:\Users\USER\Desktop\latex\tex\latex\moreverb\moreverb.sty
+Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
+\tab@position=\count154
+\tab@size=\count155
+\listing@line=\count156
+)
+\c@Theorem=\count157
+\c@Example=\count158
+\c@c-Example=\count159
+\c@Proposition=\count160
+\c@Definition=\count161
+\c@Lemma=\count162
+\c@Corol=\count163
+
+(C:\Users\USER\Desktop\latex\tex\latex\fncychap\fncychap.sty
+Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
+\RW=\skip77
+\mylen=\skip78
+\myhi=\skip79
+\px=\skip80
+\py=\skip81
+\pyy=\skip82
+\pxx=\skip83
+)
+(C:\Users\USER\Desktop\latex\tex\latex\apacite\apacite.sty
+Package: apacite 2013/07/21 v6.03 APA citation
+\c@BibCnt=\count164
+\bibleftmargin=\skip84
+\bibindent=\skip85
+\bibparsep=\skip86
+\bibitemsep=\skip87
+\biblabelsep=\skip88
+)
+(C:\Users\USER\Desktop\latex\tex\latex\makecell\makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen166
+\c@nlinenum=\count165
+\TeXr@lab=\toks41
+)
+(FinalVersionMaster.aux)
+\openout1 = `FinalVersionMaster.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 93.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 93.
+
+
+(C:\Users\USER\Desktop\latex\tex\latex\txfonts\omltxmi.fd
+File: omltxmi.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 93.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 93.
+
+
+(C:\Users\USER\Desktop\latex\tex\latex\txfonts\omstxsy.fd
+File: omstxsy.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 93.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 93.
+
+
+(C:\Users\USER\Desktop\latex\tex\latex\txfonts\omxtxex.fd
+File: omxtxex.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 93.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 93.
+
+(C:\Users\USER\Desktop\latex\tex\latex\txfonts\utxexa.fd
+File: utxexa.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 93.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 93.
+
+(C:\Users\USER\Desktop\latex\tex\latex\base\ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 93.
+
+(C:\Users\USER\Desktop\latex\tex\latex\txfonts\ot1txr.fd
+File: ot1txr.fd 2000/12/15 v3.1
+)
+\AtBeginShipoutBox=\box43
+
+(C:\Users\USER\Desktop\latex\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count166
+\scratchdimen=\dimen167
+\scratchbox=\box44
+\nofMPsegments=\count167
+\nofMParguments=\count168
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count169
+\MPscratchDim=\dimen168
+\MPnumerator=\count170
+\makeMPintoPDFobject=\count171
+\everyMPtoPDFconversion=\toks43
+) (C:\Users\USER\Desktop\latex\tex\latex\oberdiek\pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+\c@minilofdepth=\count172
+\c@minilotdepth=\count173
+\c@partlofdepth=\count174
+\c@partlotdepth=\count175
+\c@sectlofdepth=\count176
+\c@sectlotdepth=\count177
+Package minitoc(hints) Info: I0049
+(minitoc(hints))             ==> You requested the hints option. 
+(minitoc(hints))             Some hints are eventually given below.
+Package minitoc(hints) Info: I0042
+(minitoc(hints))             --- The appendix package is loaded. 
+(minitoc(hints))             See the minitoc package documentation 
+(minitoc(hints))             for specific precautions.
+
+
+Package minitoc(hints) Warning: W0028
+(minitoc(hints))                --- The \chapter command is altered 
+(minitoc(hints))                after minitoc.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: floatflt package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@maskedRefs=\count178
+(C:\Users\USER\Desktop\latex\tex\latex\apacite\english.apc
+File: english.apc 2013/07/21 v6.03 apacite language file
+LaTeX Info: Redefining \BPBI on input line 129.
+LaTeX Info: Redefining \BHBI on input line 130.
+)
+(pagegardeMaster.tex
+Missing character: There is no È in font txsc!
+ <91.png, id=1, 264.23718pt x 202.50656pt>
+File: 91.png Graphic file (type png)
+ <use 91.png>
+Package pdftex.def Info: 91.png used on input line 9.
+(pdftex.def)             Requested size: 71.13188pt x 54.51372pt.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 56.
+
+(C:\Users\USER\Desktop\latex\tex\latex\txfonts\utxsya.fd
+File: utxsya.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 56.
+
+(C:\Users\USER\Desktop\latex\tex\latex\txfonts\utxsyb.fd
+File: utxsyb.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Try loading font information for U+txmia on input line 56.
+
+(C:\Users\USER\Desktop\latex\tex\latex\txfonts\utxmia.fd
+File: utxmia.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 56.
+
+(C:\Users\USER\Desktop\latex\tex\latex\txfonts\utxsyc.fd
+File: utxsyc.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 56.
+
+(C:\Users\USER\Desktop\latex\tex\latex\base\ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)) [1
+
+{C:/Users/USER/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./91.png>] [
+2
+
+
+]
+LaTeX Font Info:    Try loading font information for OT1+txss on input line 117
+.
+
+(C:\Users\USER\Desktop\latex\tex\latex\txfonts\ot1txss.fd
+File: ot1txss.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
+(Font)              scaled to size 23.63593pt on input line 117.
+LaTeX Font Info:    Font shape `OT1/txss/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/txss/b/n' tried instead on input line 117.
+LaTeX Font Info:    Font shape `OT1/txss/b/n' will be
+(Font)              scaled to size 23.63593pt on input line 117.
+
+(FinalVersionMaster.toc [3
+
+])
+\tf@toc=\write4
+\openout4 = `FinalVersionMaster.toc'.
+
+ [4] (FinalVersionMaster.lof)
+\tf@lof=\write5
+\openout5 = `FinalVersionMaster.lof'.
+
+ [5
+
+
+]
+(FinalVersionMaster.lot)
+\tf@lot=\write6
+\openout6 = `FinalVersionMaster.lot'.
+
+ [6
+
+
+] (FinalVersionMaster.loa)
+\tf@loa=\write7
+\openout7 = `FinalVersionMaster.loa'.
+
+ [7
+
+
+] (introduction.tex)
+[1
+
+
+] (Chapter1.tex
+Chapter 1.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 1.
+(C:\Users\USER\Desktop\latex\tex\latex\psnfss\ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 1.
+
+(C:\Users\USER\Desktop\latex\tex\latex\psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+Missing character: There is no ‚ in font txr!
+Missing character: There is no Ä in font txr!
+Missing character: There is no ú in font txr!
+Missing character: There is no ‚ in font txr!
+Missing character: There is no Ä in font txr!
+Missing character: There is no ù in font txr!
+ [2
+
+]
+LaTeX Font Info:    Try loading font information for TS1+txr on input line 18.
+
+(C:\Users\USER\Desktop\latex\tex\latex\txfonts\ts1txr.fd
+File: ts1txr.fd 2000/12/15 v3.1
+)
+<logo.png, id=38, 311.1625pt x 163.61125pt>
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 26.
+(pdftex.def)             Requested size: 71.13188pt x 37.4001pt.
+
+Overfull \hbox (5.292pt too wide) in paragraph at lines 23--29
+\OT1/txr/m/n/12 Laboratory CeRCI,Intelligent Com-mu-ni-ties Re-search Cen-ter,w
+as cre-ated in XXXX
+ []
+
+[3]
+Missing character: There is no √ in font txr!
+Missing character: There is no ® in font txr!
+) [4 <./logo.png>] (Chapter2.tex
+Chapter 2.
+
+Overfull \hbox (21.528pt too wide) in paragraph at lines 5--7
+\OT1/txr/m/n/12 tled Trans-form-ing our world: the 2030 Agenda for Sus-tain-abl
+e De-vel-op-ment.Countries
+ []
+
+[5
+
+] [6] <tweet.png, id=56, 1263.72125pt x 1027.84pt>
+File: tweet.png Graphic file (type png)
+ <use tweet.png>
+Package pdftex.def Info: tweet.png used on input line 38.
+(pdftex.def)             Requested size: 71.13188pt x 57.84094pt.
+Missing character: There is no ‚ in font txr!
+Missing character: There is no Ä in font txr!
+Missing character: There is no ú in font txr!
+Missing character: There is no ‚ in font txr!
+Missing character: There is no Ä in font txr!
+Missing character: There is no ù in font txr!
+Missing character: There is no ‚ in font txr!
+Missing character: There is no Ä in font txr!
+Missing character: There is no ú in font txr!
+Missing character: There is no ‚ in font txr!
+Missing character: There is no Ä in font txr!
+Missing character: There is no ù in font txr!
+Missing character: There is no ‚ in font txr!
+Missing character: There is no Ä in font txr!
+Missing character: There is no ú in font txr!
+Missing character: There is no ‚ in font txr!
+Missing character: There is no Ä in font txr!
+Missing character: There is no ù in font txr!
+Missing character: There is no ‚ in font txr!
+Missing character: There is no Ä in font txr!
+Missing character: There is no ú in font txr!
+Missing character: There is no ‚ in font txr!
+Missing character: There is no Ä in font txr!
+Missing character: There is no ù in font txr!
+ [7 <./tweet.png>]
+Overfull \hbox (3.9833pt too wide) in paragraph at lines 59--65
+\OT1/txr/bx/n/12 Data Ac-cess via US Congress Li-brary: \OT1/txr/m/n/12 Since A
+pril 2010, the Li-brary of Congress
+ []
+
+[8]
+Overfull \hbox (2.44005pt too wide) in paragraph at lines 76--77
+[]\OT1/txr/m/n/12 Disclosure In-te-gra-tion: The mean-ing of any sen-tence de-p
+ends upon the mean-
+ []
+
+[9]) [10] (conclusion.tex) [11
+
+
+] (FinalVersionMaster.bbl)
+Package minitoc Info: I0009
+(minitoc)             Listing minitoc auxiliary files. 
+(minitoc)             Creating the FinalVersionMaster.maf file.
+\openout3 = `FinalVersionMaster.maf'.
+
+
+
+Package minitoc(hints) Warning: W0086
+(minitoc(hints))                The fncychap package should be 
+(minitoc(hints))                loaded BEFORE the minitoc package.
+
+
+Package minitoc(hints) Warning: W0033
+(minitoc(hints))                The caption package should be 
+(minitoc(hints))                loaded BEFORE the minitoc package.
+
+Package minitoc(hints) Info: I0053
+(minitoc(hints))             You have loaded the float package; 
+(minitoc(hints))             please be aware that the minitoc package 
+(minitoc(hints))             facilities can not be used for new types 
+(minitoc(hints))             of floats defined by the float package.
+
+Package minitoc(hints) Warning: W0024
+(minitoc(hints))                Some hints have been written 
+(minitoc(hints))                in the FinalVersionMaster.log file.
+
+[12
+
+] (FinalVersionMaster.aux) ) 
+Here is how much of TeX's memory you used:
+ 10509 strings out of 493333
+ 149768 string characters out of 3139224
+ 253081 words of memory out of 3000000
+ 13495 multiletter control sequences out of 15000+200000
+ 55321 words of font info for 128 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 61i,10n,96p,853b,406s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/USER/Desktop/latex/fonts/enc/dvips/base/8
+r.enc}<C:/Users/USER/Desktop/latex/fonts/type1/public/txfonts/rtcxr.pfb><C:/Use
+rs/USER/Desktop/latex/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/USER/Deskto
+p/latex/fonts/type1/public/txfonts/rtxsc.pfb><C:/Users/USER/Desktop/latex/fonts
+/type1/urw/helvetic/uhvb8a.pfb><C:/Users/USER/Desktop/latex/fonts/type1/urw/hel
+vetic/uhvr8a.pfb><C:/Users/USER/Desktop/latex/fonts/type1/urw/times/utmb8a.pfb>
+<C:/Users/USER/Desktop/latex/fonts/type1/urw/times/utmr8a.pfb><C:/Users/USER/De
+sktop/latex/fonts/type1/urw/times/utmr8a.pfb><C:/Users/USER/Desktop/latex/fonts
+/type1/urw/times/utmri8a.pfb>
+Output written on FinalVersionMaster.pdf (19 pages, 159971 bytes).
+PDF statistics:
+ 109 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+

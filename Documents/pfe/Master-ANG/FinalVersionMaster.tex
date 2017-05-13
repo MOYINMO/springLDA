@@ -1,0 +1,228 @@
+% lateX style for master IGC reports (LaTeX2e)
+% This file was updated by Nahla Ben Amor - May 2014
+% This file was updated by Zeineb Chelly - December 2014
+\documentclass[fleqn,a4paper,twoside,openright]{book}
+\newcommand{\chaptertoc}[1]{\chapter*{#1}
+\addcontentsline{toc}{chapter}{#1}
+\markboth{{#1}}{{#1}}}
+% Set the beginning of a LaTeX document
+\usepackage{amsmath}%\usepackage{extsizes}
+\usepackage{amssymb}\usepackage{pdfpages}
+\usepackage{rotating}\usepackage[12pt]{extsizes}
+\usepackage{lscape}
+\usepackage{amsthm}
+\usepackage{makeidx} % allows for indexgeneration
+
+\usepackage{fmtcount}\usepackage{textcomp}
+\usepackage{fancyhdr}
+\usepackage{txfonts} \usepackage{algorithm,algorithmic}
+
+\usepackage[toc,page]{appendix}
+\usepackage{multirow}
+\usepackage{minitoc}
+
+%\usepackage{Packages/phs_goodies}
+\usepackage{graphicx}
+\usepackage{slashbox}
+\usepackage{amsmath}
+\usepackage{epsfig}
+\usepackage{epstopdf}
+%\usepackage{xcolor,colortbl}
+\usepackage{subfig}
+\usepackage{fancyhdr}
+\usepackage{multirow}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+
+
+\pagestyle{fancy}
+\pagestyle{headings}
+\renewcommand{\chaptermark}[1]%
+{\markboth{\itshape{Chapter~\thechapter~: \ #1}}{}}
+\renewcommand{\sectionmark}[1]%
+{\markright{\itshape{Section~\thesection~--~\ #1}}}
+\lhead[\thepage]{\leftmark}
+\rhead[\leftmark]{\thepage}
+
+\usepackage{latexsym}
+\usepackage{amssymb, euscript} %, eufrak}
+\usepackage{calc}
+%
+\vfuzz2pt % Don't report over-full v-boxes if over-edge is small
+\hfuzz2pt % Don't report over-full h-boxes if over-edge is small
+%\usepackage{Packages/phsabbreviations}
+%\usepackage{cases}
+%\usepackage{apacite}
+\usepackage{lettrine}
+\usepackage{a4wide}
+\usepackage{verbatim}
+\usepackage{tabularx}
+\usepackage{slashbox}
+\usepackage{pict2e}
+\usepackage{floatflt}
+\usepackage{moreverb}
+\usepackage{pdfpages}
+\newtheorem{Theorem}{Theorem}[chapter]
+\newtheorem{Example}{Example} [chapter]
+\newtheorem{c-Example}{Counter-example} [chapter]
+\newtheorem{Proposition}{Proposition} [chapter]
+\newtheorem{Definition}{Definition} [chapter]
+\newtheorem{Lemma}{Lemma} [chapter]
+\newtheorem{Corol}{Corollary} [chapter]
+\usepackage[Lenny]{fncychap}
+\ChTitleVar{\Huge\sffamily\bfseries}
+\usepackage[nosectionbib]{apacite}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{position=below}
+\usepackage{array,multirow,makecell}
+\setcellgapes{1pt}
+\makegapedcells
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash }b{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash }b{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash }b{#1}}
+\renewcommand{\baselinestretch}{1.1} %interligne
+\setlength{\parskip}{0.3cm}
+
+  \makeatletter
+\renewcommand{\thealgorithm}{\ifnum \c@chapter>\z@ \thechapter.\fi
+ \@arabic\c@algorithm}
+\@addtoreset{algorithm}{chapter}
+\makeatother
+\begin{document}
+
+%\includepdf{PageDeGarMaster.pdf}
+\input{pagegardeMaster}
+\clearpage
+\thispagestyle{empty}
+\cleardoublepage
+ \newpage
+\normalsize
+
+
+
+
+
+ \newpage
+\def\cleardoublepage{\clearpage
+ \if@twoside
+  \ifodd\c@page\else
+   \null\thispagestyle{empty}\newpage
+   \if@twocolumn\null\newpage\fi
+   \fi
+  \fi
+ }%
+\def\ps@chapterverso{\ps@empty}%
+\tableofcontents
+\newpage
+\def\cleardoublepage{\clearpage
+ \if@twoside
+  \ifodd\c@page\else
+   \null\thispagestyle{empty}\newpage
+   \if@twocolumn\null\newpage\fi
+   \fi
+  \fi
+ }%
+\def\ps@chapterverso{\ps@empty}%
+%%%% fin macro %%%%
+
+
+\cleardoublepage
+%\newpage
+\thispagestyle{empty}
+\listoffigures
+\cleardoublepage
+\newpage
+\listoftables
+\newpage
+ \cleardoublepage
+\listofalgorithms
+ \newpage
+\def\cleardoublepage{\clearpage
+ \if@twoside
+  \ifodd\c@page\else
+   \null\thispagestyle{empty}\newpage
+   \if@twocolumn\null\newpage\fi
+   \fi
+  \fi
+ }%
+\def\ps@chapterverso{\ps@empty}%
+%%%% fin macro %%%%
+
+
+\cleardoublepage
+%\newpage
+\thispagestyle{empty}
+
+
+
+\pagenumbering{arabic}
+ \input{introduction.tex}
+   \newpage
+\def\cleardoublepage{\clearpage
+ \if@twoside
+  \ifodd\c@page\else
+   \null\thispagestyle{chapterverso}\newpage
+   \if@twocolumn\null\newpage\fi
+   \fi
+  \fi
+ }%
+\def\ps@chapterverso{\ps@empty}%
+%%%% fin macro %%%%
+
+\input{Chapter1.tex}
+ \newpage
+\def\cleardoublepage{\clearpage
+ \if@twoside
+  \ifodd\c@page\else
+   \null\thispagestyle{chapterverso}\newpage
+   \if@twocolumn\null\newpage\fi
+   \fi
+  \fi
+ }%
+\def\ps@chapterverso{\ps@empty}%
+%%%% fin macro %%%%
+
+
+\input{Chapter2.tex}
+ \newpage
+\def\cleardoublepage{\clearpage
+ \if@twoside
+  \ifodd\c@page\else
+   \null\thispagestyle{chapterverso}\newpage
+   \if@twocolumn\null\newpage\fi
+   \fi
+  \fi
+ }%
+\def\ps@chapterverso{\ps@empty}%
+%%%% fin macro %%%%
+\newpage
+\cleardoublepage
+
+
+
+\input{conclusion.tex}
+ \newpage
+\def\cleardoublepage{\clearpage
+ \if@twoside
+  \ifodd\c@page\else
+   \null\thispagestyle{chapterverso}\newpage
+   \if@twocolumn\null\newpage\fi
+   \fi
+  \fi
+ }%
+\def\ps@chapterverso{\ps@empty}%
+%%%% fin macro %%%%
+
+%%%% fin macro %%%%
+
+
+
+%\nocite{*}
+\bibliographystyle{Apacite}
+\bibliography{NewBib}
+
+
+\end{document}
+

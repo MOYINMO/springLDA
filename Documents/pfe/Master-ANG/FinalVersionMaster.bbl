@@ -1,0 +1,153 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Alawadhi%
+\ \protect \BOthers {.}}{%
+Alawadhi%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+Alawadhi2012}
+\APACinsertmetastar {%
+Alawadhi2012}%
+\begin{APACrefauthors}%
+Alawadhi, S.%
+, Aldama-Nalda, A.%
+, Chourabi, H.%
+, Gil-Garcia, J\BPBI R.%
+, Leung, S.%
+, Mellouli, S.%
+\BDBL {}Walker, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Building Understanding of Smart City Initiatives}
+  {Building understanding of smart city initiatives}.{\BBCQ}
+\newblock
+\BIn{} H\BPBI J.~Scholl, M.~Janssen, M\BPBI A.~Wimmer, C\BPBI E.~Moe\BCBL {}\
+  \BBA {} L\BPBI S.~Flak\ (\BEDS), .
+\newblock
+\APACaddressPublisher{Berlin, Heidelberg}{Springer Berlin Heidelberg}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Eiben%
+\ \BBA {} Smith.%
+}{%
+Eiben%
+\ \BBA {} Smith.%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+bio}
+\APACinsertmetastar {%
+bio}%
+\begin{APACrefauthors}%
+Eiben, A.%
+\BCBT {}\ \BBA {} Smith., J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2007}.
+\newblock
+\APACrefbtitle {Introduction to Evolutionary Computing} {Introduction to
+  evolutionary computing}.
+\newblock
+\APACaddressPublisher{}{Natural Computing}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Jensen%
+}{%
+Jensen%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+FRSthesis}
+\APACinsertmetastar {%
+FRSthesis}%
+\begin{APACrefauthors}%
+Jensen, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2005}.
+\newblock
+\APACrefbtitle {Combining rough and fuzzy sets for feature selection}
+  {Combining rough and fuzzy sets for feature selection}.
+\newblock
+\APACaddressPublisher{}{Doctoral Dissertation, School of Informatics University
+  of Edinburgh}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Matzinger%
+}{%
+Matzinger%
+}{%
+{\protect \APACyear {2001}}%
+}]{%
+dgg}
+\APACinsertmetastar {%
+dgg}%
+\begin{APACrefauthors}%
+Matzinger, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2001}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The Danger Model in it's Historical Context} {The danger
+  model in it's historical context}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Scandinavian Journal of Immunology}{54}{}{4-9}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zadeh%
+}{%
+Zadeh%
+}{%
+{\protect \APACyear {1965}}%
+}]{%
+fuzzysets}
+\APACinsertmetastar {%
+fuzzysets}%
+\begin{APACrefauthors}%
+Zadeh, L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1965}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Fuzzy sets} {Fuzzy sets}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Information and Control}{8}{}{338-353}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zimmermann%
+}{%
+Zimmermann%
+}{%
+{\protect \APACyear {1996}}%
+}]{%
+7f}
+\APACinsertmetastar {%
+7f}%
+\begin{APACrefauthors}%
+Zimmermann, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1996}.
+\newblock
+\APACrefbtitle {Fuzzy Set Theory and Its Applications} {Fuzzy set theory and
+  its applications}.
+\newblock
+\APACaddressPublisher{}{Kluwer Academic}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

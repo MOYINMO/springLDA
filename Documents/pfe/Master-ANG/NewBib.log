@@ -1,0 +1,28 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdftex 2017.4.4)  7 APR 2017 21:36
+entering extended mode
+**./NewBib.bib
+(NewBib.bib [1{C:/Users/USER/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+] [2]
+Overfull \hbox (1.13254pt too wide) in paragraph at lines 450--473
+[]\tenrm @ARTICLE6, AU-THOR = S. Minton, TI-TLE = Qual-i-ta-tive re-sults con-c
+ern-ing the util-ity of explanation-|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm @
+.\tenrm A
+.\tenrm R
+.\kern-0.83334
+.etc.
+
+[3] [4] [5])
+*
+(Please type a command or say `\end')
+*\end
+[6]<C:/Users/USER/Desktop/latex/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on NewBib.pdf (6 pages, 44519 bytes).
+PDF statistics:
+ 25 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

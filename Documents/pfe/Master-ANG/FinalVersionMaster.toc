@@ -1,0 +1,24 @@
+\contentsline {chapter}{\numberline {1}General context}{2}
+\contentsline {section}{\numberline {1.1}Introduction}{2}
+\contentsline {section}{\numberline {1.2}Problematic}{2}
+\contentsline {section}{\numberline {1.3}Objectives}{3}
+\contentsline {section}{\numberline {1.4}framework of our internship}{3}
+\contentsline {subsection}{\numberline {1.4.1}laboratory CeRCI}{3}
+\contentsline {section}{\numberline {1.5}Conclusion}{4}
+\contentsline {chapter}{\numberline {2}State of the art}{5}
+\contentsline {section}{\numberline {2.1}Introduction}{5}
+\contentsline {section}{\numberline {2.2}Sustainable development goals}{5}
+\contentsline {section}{\numberline {2.3}Microblogs Platform}{6}
+\contentsline {subsection}{\numberline {2.3.1}Twitter Microblog}{7}
+\contentsline {section}{\numberline {2.4}Data Collection Technique}{8}
+\contentsline {subsection}{\numberline {2.4.1}Direct Data Access}{8}
+\contentsline {subsection}{\numberline {2.4.2}Data Access via Ad-hoc Applications}{8}
+\contentsline {section}{\numberline {2.5}Natural Language Processing}{8}
+\contentsline {subsection}{\numberline {2.5.1}Steps in NLP}{9}
+\contentsline {section}{\numberline {2.6}Information Retrieval}{9}
+\contentsline {subsection}{\numberline {2.6.1}IR based on Information Content Classification}{9}
+\contentsline {subsection}{\numberline {2.6.2}IR based on Information Providers Classification}{10}
+\contentsline {section}{\numberline {2.7}Approaches analysis Tweets}{10}
+\contentsline {section}{\numberline {2.8}Conclusion}{10}
+\contentsline {chapter}{Conclusion}{11}
+\contentsline {chapter}{References}{12}
