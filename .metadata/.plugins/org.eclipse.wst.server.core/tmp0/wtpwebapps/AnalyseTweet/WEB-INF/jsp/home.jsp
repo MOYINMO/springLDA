@@ -1,0 +1,75 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="f"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<%@ include file="./common/resourcesCSS.jsp"%>
+<link rel="stylesheet" type="text/css"
+	href="<c:url value="/assets/css/custom/home.css" />" />
+<title>Occurence by Hashtag</title>
+</head>
+<body class="home-body container-fluid">
+		<!-- La route a appeler -->
+		<input type="hidden" name="route" id="route" value="<c:url value="/parse" />"/>
+		<div class="row">
+		
+			<!-- MENU -->
+			<div class="col-xs-2 leftMenu">
+				<div class="row">
+					<div onClick="deleteBase()" class="col col-xs-6 home-btn home-btn-left">
+						<i class="fa fa-trash" aria-hidden="true"></i>
+					</div>
+					<div onClick="changeFile()" class="col col-xs-6 home-btn">
+						<i class="fa fa-cloud-upload" aria-hidden="true"></i>
+					</div>
+					<div style="width:0px;height:0px;overflow:hidden;">
+						<form id="formDoc" action="POST" enctype="multipart/form-data">
+							<input onChange="uploadFile()" type="file" name="file" id="file" />
+						</form>
+					</div>
+				</div>
+				<ul class="nav nav-pills nav-stacked" role="tablist">
+					<li onClick="changeAction(1)" role="presentation" class="whiteNav active"><a href="#tab1"
+						aria-controls="tab1" role="tab" data-toggle="tab">Most tweeted Hashtag</a></li>
+					<li onClick="changeAction(2)" role="presentation" class="whiteNa"><a href="#tab2"
+						aria-controls="tab2" role="tab" data-toggle="tab">Map by Hash</a></li>
+					<li onClick="changeAction(3)" role="presentation" class="whiteNa"><a href="#tab3"
+						aria-controls="tab3" role="tab" data-toggle="tab">Unique tweet</a></li>
+					<li onClick="changeAction(4)" role="presentation" class="whiteNa"><a href="#tab4"
+						aria-controls="tab4" role="tab" data-toggle="tab">Tweets by source</a></li>
+				</ul>
+			</div>
+			
+			<!-- Page  centrale -->
+			<div class="col-xs-10">
+				<!-- partie grise -->
+				<div class="row home-padding">		
+					<!-- Input -->
+					<div class="col-xs-2 col-xs-offset-3">
+						<input type="text" class="form-control" placeholder="#hashtag" id="hashtag">
+					</div>
+					<div class="col-xs-4">
+						<div class="input-group">
+					        <button class="btn btn-default" type="button" onClick="parse()">GO !</button>
+					    </div>
+					</div>
+				</div>
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="tab1"><%@ include file="./home/mostTweetedHash.jsp"%></div>
+					<div role="tabpanel" class="tab-pane" id="tab2"><%@ include file="./home/mapByHash.jsp"%></div>
+					<div role="tabpanel" class="tab-pane" id="tab3"><%@ include file="./home/uniqueTweet.jsp"%></div>
+					<div role="tabpanel" class="tab-pane" id="tab4"><%@ include file="./home/mapByHash.jsp"%></div>
+				</div>
+			</div>
+		</div>
+
+	<%@ include file="./common/resourcesJS.jsp"%>
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_W4IHIDKlL17Q9nLrzhuLXl_5IomDV40"></script>
+	<script type="text/javascript"
+		src="<c:url value="/assets/javascript/custom/home.js" />"></script>
+</body>
+</html>

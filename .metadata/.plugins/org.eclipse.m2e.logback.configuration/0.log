@@ -1,0 +1,47 @@
+2017-05-25 18:28:40,370 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: AnalyseTweet:AnalyseTweet:0.0.1-SNAPSHOT @ /home/iness/springLDA/AnalyseTweet/pom.xml.
+2017-05-25 18:28:40,370 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: AnalyseTweet:AnalyseTweet:0.0.1-SNAPSHOT @ /home/iness/springLDA/AnalyseTweet/pom.xml.
+2017-05-25 18:28:42,617 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-25 18:28:42,620 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/iness/springLDA/AnalyseTweet/src/main/resources
+2017-05-25 18:28:42,623 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-25 18:28:42,624 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/iness/springLDA/AnalyseTweet/src/test/resources
+2017-05-25 18:28:43,398 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: AnalyseTweet:AnalyseTweet:0.0.1-SNAPSHOT @ /home/iness/springLDA/AnalyseTweet/pom.xml.
+2017-05-25 18:28:56,500 [Worker-18] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-05-25 18:28:56,830 [Worker-18] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: AnalyseTweet:AnalyseTweet:0.0.1-SNAPSHOT @ /home/iness/springLDA/AnalyseTweet/pom.xml.
+2017-05-25 18:28:57,688 [Worker-18] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AnalyseTweet/src
+2017-05-25 18:28:57,689 [Worker-18] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /AnalyseTweet/src/test/java because it overlaps with /AnalyseTweet/src
+2017-05-25 18:28:58,598 [Worker-18] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for AnalyseTweet
+2017-05-25 18:28:58,602 [Worker-18] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 2 sec
+2017-05-25 18:28:59,229 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-25 18:28:59,229 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/iness/springLDA/AnalyseTweet/src/main/resources
+2017-05-25 18:28:59,232 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-25 18:28:59,233 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/iness/springLDA/AnalyseTweet/src/test/resources
+2017-05-25 18:28:59,233 [Worker-12] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of AnalyseTweet
+2017-05-25 18:28:59,234 [Worker-12] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for AnalyseTweet
+2017-05-25 18:28:59,241 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-clean-plugin:jar:2.5 is missing, no dependency information available
+2017-05-25 18:28:59,251 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-25 18:31:19,625 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: AnalyseTweet:AnalyseTweet:0.0.1-SNAPSHOT @ /home/iness/springLDA/AnalyseTweet/pom.xml.
+2017-05-25 18:31:20,961 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-25 18:31:20,962 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/iness/springLDA/AnalyseTweet/src/main/resources
+2017-05-25 18:31:20,964 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-25 18:31:20,965 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/iness/springLDA/AnalyseTweet/src/test/resources
+2017-05-25 18:31:23,136 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-25 18:31:23,138 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/iness/springLDA/AnalyseTweet/src/main/resources
+2017-05-25 18:31:23,140 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-25 18:31:23,141 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/iness/springLDA/AnalyseTweet/src/test/resources
+2017-05-25 18:31:25,850 [Worker-1] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-05-25 18:31:26,099 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: AnalyseTweet:AnalyseTweet:0.0.1-SNAPSHOT @ /home/iness/springLDA/AnalyseTweet/pom.xml.
+2017-05-25 18:31:28,157 [Worker-1] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AnalyseTweet/src
+2017-05-25 18:31:28,157 [Worker-1] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /AnalyseTweet/src/test/java because it overlaps with /AnalyseTweet/src
+2017-05-25 18:31:28,799 [Worker-1] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for AnalyseTweet
+2017-05-25 18:31:28,801 [Worker-1] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 2 sec
+2017-05-25 18:31:29,928 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-25 18:31:29,932 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/iness/springLDA/AnalyseTweet/src/main/resources
+2017-05-25 18:31:29,934 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-25 18:31:29,935 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/iness/springLDA/AnalyseTweet/src/test/resources
+2017-05-25 18:31:29,935 [Worker-7] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of AnalyseTweet
+2017-05-25 18:31:29,935 [Worker-7] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for AnalyseTweet
+2017-05-25 18:31:29,939 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-25 18:31:41,828 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-25 18:31:41,829 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/iness/springLDA/AnalyseTweet/src/main/resources
+2017-05-25 18:31:41,830 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-25 18:31:41,832 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/iness/springLDA/AnalyseTweet/src/test/resources

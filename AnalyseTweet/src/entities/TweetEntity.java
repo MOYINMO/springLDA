@@ -1,0 +1,221 @@
+package entities;
+
+import java.util.Calendar;
+import javax.persistence.Basic;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+
+/**
+ * Classe objet d'un tweet
+ * 
+ * @author iness
+ *
+ */
+@Entity
+@Table(name = "TWEET")
+public class TweetEntity {
+
+	/**
+	 * Attributs
+	 */
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Basic(optional = false)
+	@Column(name = "TWEET_ID")
+	private Long TweetId;
+
+	@Column(name = "LIGNE_NUMBER")
+	private Integer ligneNumber;
+
+	@Column(name = "TEXT")
+	private String text;
+
+	@Column(name = "FAVORITED")
+	private Boolean favorited;
+
+	@Column(name = "FAVORITED_COUNT")
+	private Integer favoritedCount;
+
+	@Column(name = "REPLY_TO_SN")
+	private String replyToSN;
+
+	@Column(name = "CREATED")
+	private Calendar created;
+
+	@Column(name = "TRUNCATED")
+	private Boolean truncated;
+
+	@Column(name = "REPLY_TO_SID")
+	private String replyToSID;
+
+	@Column(name = "ID")
+	private Long id;
+
+	@Column(name = "REPLY_TO_UID")
+	private String replyToUID;
+
+	@Column(name = "STATUS_SOURCE")
+	private String statusSource;
+
+	@Column(name = "SCREEN_NAME")
+	private String screenName;
+
+	@Column(name = "RETWEET_COUNT")
+	private Integer retweetCount;
+
+	@Column(name = "IS_RETWEET")
+	private Boolean isRetweet;
+
+	@Column(name = "RETWEETED")
+	private Boolean retweeted;
+
+	@Column(name = "LONGITUDE")
+	private String longitude;
+
+	@Column(name = "LATITUDE")
+	private String latitude;
+
+	/**
+	 * Getters and Setters
+	 */
+	public Integer getLigneNumber() {
+		return ligneNumber;
+	}
+
+	public void setLigneNumber(Integer ligneNumber) {
+		this.ligneNumber = ligneNumber;
+	}
+
+	public String getText() {
+		return text;
+	}
+
+	public void setText(String text) {
+		this.text = text;
+	}
+
+	public Boolean getFavorited() {
+		return favorited;
+	}
+
+	public void setFavorited(Boolean favorited) {
+		this.favorited = favorited;
+	}
+
+	public Integer getFavoritedCount() {
+		return favoritedCount;
+	}
+
+	public void setFavoritedCount(Integer favoritedCount) {
+		this.favoritedCount = favoritedCount;
+	}
+
+	public String getReplyToSN() {
+		return replyToSN;
+	}
+
+	public void setReplyToSN(String replyToSN) {
+		this.replyToSN = replyToSN;
+	}
+
+	public Calendar getCreated() {
+		return created;
+	}
+
+	public void setCreate(Calendar created) {
+		this.created = created;
+	}
+
+	public Boolean getTruncated() {
+		return truncated;
+	}
+
+	public void setTruncated(Boolean truncated) {
+		this.truncated = truncated;
+	}
+
+	public String getReplyToSID() {
+		return replyToSID;
+	}
+
+	public void setReplyToSID(String replyToSID) {
+		this.replyToSID = replyToSID;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getReplyToUID() {
+		return replyToUID;
+	}
+
+	public void setReplyToUID(String replyToUID) {
+		this.replyToUID = replyToUID;
+	}
+
+	public String getStatusSource() {
+		return statusSource;
+	}
+
+	public void setStatusSource(String statusSource) {
+		this.statusSource = statusSource;
+	}
+
+	public String getScreenName() {
+		return screenName;
+	}
+
+	public void setScreenName(String screenName) {
+		this.screenName = screenName;
+	}
+
+	public Integer getRetweetCount() {
+		return retweetCount;
+	}
+
+	public void setRetweetCount(Integer retweetCount) {
+		this.retweetCount = retweetCount;
+	}
+
+	public Boolean getIsRetweet() {
+		return isRetweet;
+	}
+
+	public void setIsRetweet(Boolean isRetweet) {
+		this.isRetweet = isRetweet;
+	}
+
+	public Boolean getRetweeted() {
+		return retweeted;
+	}
+
+	public void setRetweeted(Boolean retweeted) {
+		this.retweeted = retweeted;
+	}
+
+	public String getLongitude() {
+		return longitude;
+	}
+
+	public void setLongitude(String longitude) {
+		this.longitude = longitude;
+	}
+
+	public String getLatitude() {
+		return latitude;
+	}
+
+	public void setLatitude(String latitude) {
+		this.latitude = latitude;
+	}
+}

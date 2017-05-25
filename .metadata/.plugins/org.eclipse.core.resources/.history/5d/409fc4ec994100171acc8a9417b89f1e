@@ -1,0 +1,158 @@
+package dao;
+
+import java.util.List;
+import java.util.Map;
+
+import javax.management.Query;
+
+import org.hibernate.Criteria;
+import org.hibernate.criterion.Criterion;
+import org.hibernate.criterion.Restrictions;
+
+import com.google.inject.Singleton;
+
+import entities.TweetEntity;
+import persistence.HibernateUtil;
+
+/**
+ * @author iness
+ */
+@Singleton
+@SuppressWarnings("deprecation")
+public class TweetDAO extends GenericDAO {
+	private static TweetDAO singleton;
+	
+	/**
+	 * private constructor
+	 */
+	private TweetDAO(){
+		
+	}
+	
+	public static TweetDAO getSingleton(){
+		if(null == singleton){
+			singleton = new TweetDAO();
+			sessionfactory=HibernateUtil.getSessionFactory();
+		}
+		return singleton;
+	}
+	
+	/**
+	 * delete all
+	 */
+	public void deleteAll(){
+		super.openSingletonConnexion();
+		session.createQuery("DELETE FROM TweetEntity").executeUpdate();
+		super.closeSingletonConnexion();
+	}
+
+	
+	/**
+	 * get a specific 
+	 * entity by id
+	 * @param id
+	 * @return
+	 */
+	public TweetEntity get(Long id){
+		super.openSingletonConnexion();
+		TweetEntity result = (TweetEntity) session.get(TweetEntity.class, id);
+		super.closeSingletonConnexion();
+		return result;
+	}
+	
+	/**
+	 * create an entity and get id
+	 * @param entity
+	 * @return a new entity
+	 */
+	public Long create(TweetEntity entity){
+		super.openSingletonConnexion();
+		Long id = (Long) super.session.save(entity);
+		super.closeSingletonConnexion();
+		return id;
+	}
+
+	/**
+	 * Create all entities from a file
+	 * @param tweets
+	 */
+	public void createFromFile(List<TweetEntity> tweets){
+		super.openSingletonConnexion();
+		for(TweetEntity tweet : tweets){
+			super.session.save(tweet);
+		}
+		super.closeSingletonConnexion();
+	}
+
+	/**
+	 * update an entity
+	 * @param entity
+	 */
+	public void update(TweetEntity entity){
+		super.openSingletonConnexion();
+		super.session.update(entity);
+		super.closeSingletonConnexion();
+	}
+	
+	/**
+	 * delete a specific entity by id
+	 * @param id
+	 */
+	public void delete(TweetEntity entity){
+		super.openSingletonConnexion();
+		session.delete(entity); 
+		super.closeSingletonConnexion();
+	}
+	
+	/**
+	 * get all entitites
+	 * @return all entities
+	 */
+	@SuppressWarnings("unchecked")
+	public List<TweetEntity> getAll(){
+		super.openSingletonConnexion();
+		List<TweetEntity> listResult = session.createQuery("FROM TweetEntity").getResultList();
+		super.closeSingletonConnexion();
+		return listResult;
+	}
+	
+	/**
+	 * Search user by criteria
+	 * @param criteria
+	 * @return
+	 */
+	@SuppressWarnings("unchecked")
+	public List<TweetEntity> searchByCriteres(Map<String,String> criteria){		
+		super.openSingletonConnexion();
+		Criteria c = session.createCriteria(TweetEntity.class);
+		for(String key : criteria.keySet()){		
+			c.add(Restrictions.eq(key, criteria.get(key)));
+		}
+		List<TweetEntity> listResult = c.list();
+		super.closeSingletonConnexion();
+		return listResult;
+	}
+
+
+	/**
+	 * Rechercher par critères mode OR
+	 */
+	@SuppressWarnings("unchecked")
+	public List<TweetEntity> searchByLikeness(Map<String, String> criteria) {
+		super.openSingletonConnexion();
+		Criteria c = session.createCriteria(TweetEntity.class);
+		Criterion fragment = null;
+		for(String key : criteria.keySet()){
+			if(null != fragment){
+				fragment = Restrictions.or(fragment, Restrictions.eq(key, criteria.get(key)));
+			}else{
+				fragment = Restrictions.eq(key, criteria.get(key));
+			}
+		}
+		c.add(fragment);
+		List<TweetEntity> listResult = c.list();
+		super.closeSingletonConnexion();
+		return listResult;
+	}
+
+}
