@@ -1,0 +1,26 @@
+package thread;
+
+import javax.servlet.AsyncContext;
+
+/**
+ * @author iness
+ */
+public class AddTweetThread implements Runnable {
+    AsyncContext ctx;
+    
+    /**
+     * Constructor
+     * @param ctx
+     */
+    public AddTweetThread(AsyncContext ctx) {
+        this.ctx = ctx;
+    }
+    
+    /**
+     * run the thread
+     */
+    public void run() {
+
+    }
+
+}

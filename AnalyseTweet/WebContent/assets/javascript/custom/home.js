@@ -16,6 +16,7 @@ function parse(){
 		'hash' : $("#hashtag").val(),
 		'action' : ACTION
 	};
+	
 	$.ajax($urlSend,{
         dataType : "json",
         data: sendData,
@@ -29,12 +30,15 @@ function parse(){
         		
         	}else if(4 == ACTION){
         		
-        	}else if(5 == ACTION){
-        		alert("DELETE ALL DATA DONE !");
         	}
          }, error: function(e) {
          }
      });
+	 if(5 == ACTION){
+		setTimeout(function(){
+			  alert("DELETE ALL DATA DONE !");
+			}, 500);	
+	}	
 	return false;
 }
 
@@ -140,7 +144,7 @@ function changeFile(){
  */
 function uploadFile(){
 	var $urlSend = $("#route").val();
-	var sendData = new FormData($("#formDoc")[0]);
+	var sendData = new FormData($("#formDoc")[0]);	
 	$.ajax($urlSend,{
 		type : 'POST',
 		dataType : "text",
@@ -148,10 +152,12 @@ function uploadFile(){
 		processData: false,
 		contentType: false,
         success: function(result) {
-        	alert("UPLOAD AND PARSING DONE !")
          }, error: function(e) {
          }
      });
+	 setTimeout(function(){
+		 alert("UPLOAD AND PARSING DONE !");
+	}, 500);	
 	return false;
 }
 

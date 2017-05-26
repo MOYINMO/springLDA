@@ -1,0 +1,27 @@
+package thread;
+
+import dao.TweetDAO;
+
+/**
+ * @author iness
+ */
+public class DeleteTweetThread implements Runnable {
+    private AsyncContext ctx;
+	
+    /**
+     * Constructor
+     * @param ctx
+     */
+    public DeleteTweetThread(ctx) {
+    		this.ctx = ctx;
+    }
+    
+    /**
+     * run the thread
+     */
+    public void run() {
+    	TweetDAO.getSingleton().deleteAll();
+    }
+
+
+}

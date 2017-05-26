@@ -1,0 +1,30 @@
+package thread;
+
+import java.util.List;
+
+import javax.servlet.AsyncContext;
+
+import dao.TweetDAO;
+import entities.TweetEntity;
+
+/**
+ * @author iness
+ */
+public class AddTweetThread implements Runnable {
+    
+    /**
+     * Constructor
+     * @param ctx
+     */
+    public AddTweetThread(List<TweetEntity>tweets) {
+        this.ctx = ctx;
+    }
+    
+    /**
+     * run the thread
+     */
+    public void run() {
+    	TweetDAO.getSingleton().createFromFile(tweets);  
+    }
+
+}

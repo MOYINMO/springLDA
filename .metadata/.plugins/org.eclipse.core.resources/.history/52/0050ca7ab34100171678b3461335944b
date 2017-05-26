@@ -1,0 +1,41 @@
+package thread;
+
+import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.http.HttpServletResponse;
+
+import dao.TweetDAO;
+import entities.TweetEntity;
+
+/**
+ * @author iness
+ */
+public class AddTweetThread implements Runnable {
+	private List<TweetEntity>tweets;
+	private HttpServletResponse response;
+	
+    /**
+     * Constructor
+     * @param ctx
+     */
+    public AddTweetThread(HttpServletResponse response, List<TweetEntity>tweets) {
+    	this.tweets = tweets;
+    	this.response = response;
+    }
+    
+    /**
+     * run the thread
+     */
+    public void run() {
+    	response.setContentType("application/json");
+	    response.setCharacterEncoding("UTF-8");
+	    try {
+			response.getWriter().write("success");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+    	TweetDAO.getSingleton().createFromFile(tweets);  
+    }
+    
+}

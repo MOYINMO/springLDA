@@ -1,0 +1,27 @@
+package thread;
+
+import javax.servlet.http.HttpServletResponse;
+
+import dao.TweetDAO;
+
+/**
+ * @author iness
+ */
+public class DeleteTweetThread implements Runnable {
+	 private HttpServletResponse response;
+	
+    /**
+     * Constructor
+     * @param ctx
+     */
+    public DeleteTweetThread(){
+    }
+    
+    /**
+     * run the thread
+     */
+    public void run() {
+    	TweetDAO.getSingleton().deleteAll();
+    }
+
+}

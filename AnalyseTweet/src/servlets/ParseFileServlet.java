@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.List;
 
+import javax.servlet.AsyncContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
@@ -23,11 +24,13 @@ import ram.DataRAM;
 import responses.MostTweetedHash;
 import responses.TweetByHash;
 import services.ParsingService;
+import thread.AddTweetThread;
+import thread.DeleteTweetThread;
 
 /**
  * Servlet implementation class ParseFileServlet
  */
-@WebServlet("/parse")
+@WebServlet(urlPatterns={"/parse"}, asyncSupported=true)
 @MultipartConfig
 public class ParseFileServlet extends GenericServlet {
 	private static final long serialVersionUID = 1L;
@@ -43,7 +46,6 @@ public class ParseFileServlet extends GenericServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String action = request.getParameter("action");
-		TweetDAO tweetDAO = TweetDAO.getSingleton();
 		ParsingService parsingService = ParsingService.getSingleton();
 		switch(action){
 			case MOST_TWEETED_HASH :
@@ -63,12 +65,14 @@ public class ParseFileServlet extends GenericServlet {
 				break;
 			case DELETE_BASE : 
 				DataRAM.TWEETS.clear();
-				super.buildAndSend(response, "success", String.class);
-				new Thread() {
-				    public void run() {
-				    	tweetDAO.deleteAll();
-				    } 
-				};
+
+				AsyncContext asyncContext = request.startAsync();
+		        asyncContext.start(new DeleteTweetThread() {
+		            @Override
+		            public void run() {
+		            	TweetDAO.getSingleton().deleteAll();
+		            }
+		        });
 				break;
 		}
 	}
@@ -77,7 +81,6 @@ public class ParseFileServlet extends GenericServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		TweetDAO tweetDAO = TweetDAO.getSingleton();
 		ParsingService parsingService = ParsingService.getSingleton();
 		try {
 			List<FileItem> items = new ServletFileUpload(new DiskFileItemFactory()).parseRequest(request);
@@ -87,13 +90,14 @@ public class ParseFileServlet extends GenericServlet {
 	        			InputStreamReader stream = new InputStreamReader(item.getInputStream());
 	        			BufferedReader reader = new BufferedReader(stream);		
 	        			List<TweetEntity> tweets = parsingService.getAll(reader);
-	        			DataRAM.TWEETS.addAll(tweets);
-	        			super.buildAndSend(response, "success", String.class);
-	        			new Thread() {
-	    				    public void run() {
-	    				    	tweetDAO.createFromFile(tweets);
-	    				    } 
-	    				};	        			
+	        			DataRAM.TWEETS.addAll(tweets);	        			
+	        			AsyncContext asyncContext = request.startAsync();
+	    		        asyncContext.start(new AddTweetThread(tweets) {
+	    		            @Override
+	    		            public void run() {
+	    		            	TweetDAO.getSingleton().createFromFile(tweets);  
+	    		            }
+	    		        });		
 	        		}
 	            }
 	        }

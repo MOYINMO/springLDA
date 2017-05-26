@@ -1,0 +1,37 @@
+package thread;
+
+import java.io.IOException;
+
+import javax.servlet.http.HttpServletResponse;
+
+import dao.TweetDAO;
+
+/**
+ * @author iness
+ */
+public class DeleteTweetThread implements Runnable {
+	 private HttpServletResponse response;
+	
+    /**
+     * Constructor
+     * @param ctx
+     */
+    public DeleteTweetThread(HttpServletResponse response){
+    	this.response = response;
+    }
+    
+    /**
+     * run the thread
+     */
+    public void run() {
+    	response.setContentType("application/json");
+	    response.setCharacterEncoding("UTF-8");
+	    try {
+			response.getWriter().write("success");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+    	TweetDAO.getSingleton().deleteAll();
+    }
+
+}

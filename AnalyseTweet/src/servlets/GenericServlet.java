@@ -50,7 +50,7 @@ public class GenericServlet extends HttpServlet {
 	 * @param clazz
 	 * @return String
 	 */
-	private String objectTojsonQuietly(Object obj, Class<?> clazz) {
+	protected String objectTojsonQuietly(Object obj, Class<?> clazz) {
 		ObjectMapper mapper = new ObjectMapper();
 		String json = null;
 		try {
