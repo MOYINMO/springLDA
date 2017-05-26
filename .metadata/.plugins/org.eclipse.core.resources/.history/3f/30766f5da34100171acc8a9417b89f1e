@@ -1,0 +1,10 @@
+package ram;
+
+/**
+ * Données laisée en RAM pour éviter les aller-retour en base de données
+ * @author iness
+ *
+ */
+public class DataRAM {
+
+}

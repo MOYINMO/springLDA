@@ -7,6 +7,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import dao.TweetDAO;
+import ram.DataRAM;
+
 
 /**
  * Servlet implementation class mainServlet
@@ -19,6 +22,9 @@ public class homeServlet extends GenericServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		if(DataRAM.TWEETS.isEmpty()){
+			DataRAM.TWEETS = TweetDAO.getSingleton().getAll();
+		}
 		super.displayPage(request, response, "home");
 	}
 

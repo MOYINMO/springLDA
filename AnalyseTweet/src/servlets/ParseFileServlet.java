@@ -19,6 +19,7 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
 import dao.TweetDAO;
 import entities.TweetEntity;
+import ram.DataRAM;
 import responses.MostTweetedHash;
 import responses.TweetByHash;
 import services.ParsingService;
@@ -44,17 +45,16 @@ public class ParseFileServlet extends GenericServlet {
 		String action = request.getParameter("action");
 		TweetDAO tweetDAO = TweetDAO.getSingleton();
 		ParsingService parsingService = ParsingService.getSingleton();
-		List<TweetEntity> tweets = tweetDAO.getAll();
 		switch(action){
 			case MOST_TWEETED_HASH :
 				MostTweetedHash mostTweetedHash = new MostTweetedHash();
-				mostTweetedHash.setData(parsingService.getMostUsed(parsingService.hashtagByValue(tweets), 20));
+				mostTweetedHash.setData(parsingService.getMostUsed(parsingService.hashtagByValue(DataRAM.TWEETS), 20));
 				super.buildAndSend(response, mostTweetedHash, MostTweetedHash.class);
 				break;
 			case MAP_BY_HASH :
 				TweetByHash tweeByHash = new TweetByHash();
 				String hash = request.getParameter("hash");
-				tweeByHash.setData(parsingService.getMostUsedTweets(hash,tweets));
+				tweeByHash.setData(parsingService.getMostUsedTweets(hash,DataRAM.TWEETS));
 				super.buildAndSend(response, tweeByHash, TweetByHash.class);
 				break;
 			case UNIQUE_TWEET :
@@ -62,8 +62,13 @@ public class ParseFileServlet extends GenericServlet {
 			case TWEET_UNIQUE_BY_SOURCES :
 				break;
 			case DELETE_BASE : 
-				tweetDAO.deleteAll();
+				DataRAM.TWEETS.clear();
 				super.buildAndSend(response, "success", String.class);
+				new Thread() {
+				    public void run() {
+				    	tweetDAO.deleteAll();
+				    } 
+				};
 				break;
 		}
 	}
@@ -82,7 +87,13 @@ public class ParseFileServlet extends GenericServlet {
 	        			InputStreamReader stream = new InputStreamReader(item.getInputStream());
 	        			BufferedReader reader = new BufferedReader(stream);		
 	        			List<TweetEntity> tweets = parsingService.getAll(reader);
-	        			tweetDAO.createFromFile(tweets);
+	        			DataRAM.TWEETS.addAll(tweets);
+	        			super.buildAndSend(response, "success", String.class);
+	        			new Thread() {
+	    				    public void run() {
+	    				    	tweetDAO.createFromFile(tweets);
+	    				    } 
+	    				};	        			
 	        		}
 	            }
 	        }

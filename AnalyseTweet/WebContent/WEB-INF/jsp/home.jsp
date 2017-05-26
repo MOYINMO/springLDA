@@ -52,7 +52,7 @@
 					</div>
 					<div class="col-xs-4">
 						<div class="input-group">
-					        <button class="btn btn-default" type="button" onClick="parse()">GO !</button>
+					        <button class="btn btn-default" type="button" onClick="excuteAnalyse()">GO !</button>
 					    </div>
 					</div>
 				</div>

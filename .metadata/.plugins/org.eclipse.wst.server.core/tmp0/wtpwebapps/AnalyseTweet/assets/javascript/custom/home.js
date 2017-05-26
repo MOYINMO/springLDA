@@ -3,6 +3,7 @@
  */
 
 var ACTION  = 1;
+var PREVIOUS = 1;
 
 $(document).ready(function() {
 	$("#hashtag").hide();
@@ -72,6 +73,16 @@ function displayChart(result){
 }
 
 /**
+ * Lancer une analyse
+ */
+function excuteAnalyse(){
+	if(ACTION == 5){
+		ACTION = PREVIOUS;
+	}
+	parse();
+}
+
+/**
  * Affichage de la map avec les markers
  * @returns
  */
@@ -110,6 +121,9 @@ function changeAction(choix){
  * suppression de la base
  */
 function deleteBase(){
+	if(5 != ACTION){
+		PREVIOUS = ACTION;
+	}
 	ACTION = 5;
 	parse();
 }
