@@ -1,0 +1,27 @@
+package services;
+
+/**
+ * @author iness
+ */
+public class TweetByUserService extends GenericService {
+	private static UniqueTweetService singleton;
+	
+	/**
+	 * private constructor
+	 */
+	private UniqueTweetService(){
+		
+	}
+	
+	/**
+	 * Recuperation du singleton
+	 * @return
+	 */
+	public static UniqueTweetService getSingleton(){
+		if(null == singleton){
+			singleton = new UniqueTweetService();
+		}
+		return singleton;
+	}
+
+}

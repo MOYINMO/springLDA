@@ -1,0 +1,12 @@
+package responses;
+
+import java.io.Serializable;
+import java.util.Map;
+
+/**
+ * @author iness
+ */
+public class UniqueTweetResponse implements Serializable{
+	private static final long serialVersionUID = 1L;
+	 Map<String,Integer>
+}

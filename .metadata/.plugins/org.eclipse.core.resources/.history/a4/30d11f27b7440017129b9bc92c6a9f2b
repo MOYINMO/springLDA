@@ -1,0 +1,25 @@
+package services;
+
+
+/**
+ * @author iness
+ */
+public class GenericService {
+
+	/**
+	 * Index of
+	 * @param text
+	 * @param value
+	 * @return
+	 */
+	protected Integer indexOf(String text, char value){
+		int result = -1;
+		for(int i=0; i<text.length(); i++){
+			if(text.charAt(i) == value){
+				return i;
+			}
+		}
+		return result;				
+	}
+	
+}

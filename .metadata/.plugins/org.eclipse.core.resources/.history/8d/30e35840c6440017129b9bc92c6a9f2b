@@ -1,0 +1,42 @@
+package services;
+
+import java.util.List;
+import java.util.Map;
+
+import entities.TweetEntity;
+
+/**
+ * @author iness
+ */
+public class TweetByUserService extends GenericService {
+	private static TweetByUserService singleton;
+	
+	/**
+	 * private constructor
+	 */
+	private TweetByUserService(){
+		
+	}
+	
+	/**
+	 * Recuperation du singleton
+	 * @return
+	 */
+	public static TweetByUserService getSingleton(){
+		if(null == singleton){
+			singleton = new TweetByUserService();
+		}
+		return singleton;
+	}
+	
+	/**
+	 * 
+	 * @param tweets
+	 * @return
+	 */
+	public Map<String, Integer> getTweetByUser(List<TweetEntity> tweets){
+		return null;
+		
+	}
+
+}

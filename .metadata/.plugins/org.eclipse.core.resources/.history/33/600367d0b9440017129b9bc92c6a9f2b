@@ -1,0 +1,8 @@
+package responses;
+
+/**
+ * @author iness
+ */
+public class TweetUniqueResponse {
+
+}

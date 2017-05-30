@@ -1,0 +1,55 @@
+package services;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
+
+import comparator.MapComparator;
+import entities.TweetEntity;
+
+/**
+ * @author iness
+ */
+public class UniqueTweetService extends GenericService {
+	private static UniqueTweetService singleton;
+	
+	/**
+	 * private constructor
+	 */
+	private UniqueTweetService(){
+		
+	}
+	
+	/**
+	 * Recuperation du singleton
+	 * @return
+	 */
+	public static UniqueTweetService getSingleton(){
+		if(null == singleton){
+			singleton = new UniqueTweetService();
+		}
+		return singleton;
+	}
+
+	
+	/**
+	 * recuperer le nombre de tweets uniques par jours
+	 * @param tweets
+	 * @return
+	 */
+	public Map<String,Integer> tweetUnique(List<TweetEntity> tweets){
+		Map<String, Integer> result = new HashMap<String, Integer>();
+		for(TweetEntity tweet : tweets){
+			if(!tweet.getIsRetweet()){
+				String currentDate = buildDisplayDate(tweet.getCreated());
+				if(null != result.get(currentDate)){
+					result.put(currentDate, result.get(currentDate)+1);
+				}else{
+					result.put(currentDate, 1);
+				}
+			}
+		}
+		return new TreeMap<String,Integer>(new MapComparator(result));;
+	}
+}

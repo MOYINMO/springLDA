@@ -1,0 +1,19 @@
+package container;
+
+import services.MostUserHashService;
+import services.ParsingService;
+import services.TweetByHashService;
+import services.UniqueTweetService;
+
+public class ContainerOfServices {
+
+	/**
+	 * creation des services
+	 */
+	protected void initServices(){
+		  mostUsedHashService = MostUserHashService.getSingleton();
+		  parsingService  = ParsingService.getSingleton();
+		  tweetByHashService = TweetByHashService.getSingleton();
+		  uniqueTweetService = UniqueTweetService.getSingleton();
+	}
+}

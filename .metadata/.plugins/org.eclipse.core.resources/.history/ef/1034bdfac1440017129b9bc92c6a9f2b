@@ -1,0 +1,31 @@
+package comparator;
+
+import java.util.Comparator;
+
+import entities.TweetEntity;
+
+/**
+ * Comparator tweet by calendar
+ * @author iness
+ *
+ */
+public class TweetByDateComparator implements Comparator<TweetEntity>{
+	private static TweetByDateComparator singleton;	
+	/**
+	 * private constructor
+	 */
+	private TweetByDateComparator(){
+		
+	}
+	
+	/**
+	 * Recuperation du singleton
+	 * @return
+	 */
+	public static TweetByDateComparator getSingleton(){
+		if(null == singleton){
+			singleton = new TweetByDateComparator();
+		}
+		return singleton;
+	}
+}

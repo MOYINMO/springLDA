@@ -1,0 +1,48 @@
+package services;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import entities.TweetEntity;
+
+/**
+ * 
+ * @author iness
+ *
+ */
+public class NombreTweetPerRetweetService {
+	private static NombreTweetPerRetweetService singleton;
+	
+	/**
+	 * private constructor
+	 */
+	private NombreTweetPerRetweetService(){
+		
+	}
+	
+	/**
+	 * Recuperation du singleton
+	 * @return
+	 */
+	public static NombreTweetPerRetweetService getSingleton(){
+		if(null == singleton){
+			singleton = new NombreTweetPerRetweetService();
+		}
+		return singleton;
+	}
+	public Map<String, Integer> getTweetByUser(List<TweetEntity> tweets){
+		Map<String, Integer> result = new HashMap<String, Integer>();
+		for(TweetEntity tweet : tweets){
+			if(!tweet.getIsRetweet()){
+				if(null != result.get(tweet.getScreenName())){
+					result.put(tweet.getScreenName(), result.get(tweet.getScreenName())+ 1);
+				}else{
+					result.put(tweet.getScreenName(), 1);
+				}
+			}
+		}
+		return result;	
+	}
+
+}

@@ -11,59 +11,77 @@
 <title>Occurence by Hashtag</title>
 </head>
 <body class="home-body container-fluid">
-		<!-- La route a appeler -->
-		<input type="hidden" name="route" id="route" value="<c:url value="/parse" />"/>
-		<div class="row">
-		
-			<!-- MENU -->
-			<div class="col-xs-2 leftMenu">
-				<div class="row">
-					<div onClick="deleteBase()" class="col col-xs-6 home-btn home-btn-left">
-						<i class="fa fa-trash" aria-hidden="true"></i>
-					</div>
-					<div onClick="changeFile()" class="col col-xs-6 home-btn">
-						<i class="fa fa-cloud-upload" aria-hidden="true"></i>
-					</div>
-					<div style="width:0px;height:0px;overflow:hidden;">
-						<form id="formDoc" action="POST" enctype="multipart/form-data">
-							<input onChange="uploadFile()" type="file" name="file" id="file" />
-						</form>
-					</div>
+	<!-- La route a appeler -->
+	<input type="hidden" name="route" id="route"
+		value="<c:url value="/parse" />" />
+	<div class="row">
+
+		<!-- MENU -->
+		<div class="col-xs-2 leftMenu">
+			<div class="row">
+				<div onClick="deleteBase()"
+					class="col col-xs-6 home-btn home-btn-left">
+					<i class="fa fa-trash" aria-hidden="true"></i>
 				</div>
-				<ul class="nav nav-pills nav-stacked" role="tablist">
-					<li onClick="changeAction(1)" role="presentation" class="whiteNav active"><a href="#tab1"
-						aria-controls="tab1" role="tab" data-toggle="tab">Most tweeted Hashtag</a></li>
-					<li onClick="changeAction(2)" role="presentation" class="whiteNa"><a href="#tab2"
-						aria-controls="tab2" role="tab" data-toggle="tab">Map by Hash</a></li>
-					<li onClick="changeAction(3)" role="presentation" class="whiteNa"><a href="#tab3"
-						aria-controls="tab3" role="tab" data-toggle="tab">Unique tweet</a></li>
-					<li onClick="changeAction(4)" role="presentation" class="whiteNa"><a href="#tab4"
-						aria-controls="tab4" role="tab" data-toggle="tab">Tweets by source</a></li>
-				</ul>
+				<div onClick="changeFile()" class="col col-xs-6 home-btn">
+					<i class="fa fa-cloud-upload" aria-hidden="true"></i>
+				</div>
+				<div style="width: 0px; height: 0px; overflow: hidden;">
+					<form id="formDoc" action="POST" enctype="multipart/form-data">
+						<input onChange="uploadFile()" type="file" name="file" id="file" />
+					</form>
+				</div>
 			</div>
-			
-			<!-- Page  centrale -->
-			<div class="col-xs-10">
-				<!-- partie grise -->
-				<div class="row home-padding">		
-					<!-- Input -->
-					<div class="col-xs-2 col-xs-offset-3">
-						<input type="text" class="form-control" placeholder="#hashtag" id="hashtag">
-					</div>
-					<div class="col-xs-4">
-						<div class="input-group">
-					        <button class="btn btn-default" type="button" onClick="excuteAnalyse()">GO !</button>
-					    </div>
+			<ul class="nav nav-pills nav-stacked" role="tablist">
+				<li onClick="changeAction(1)" role="presentation"
+					class="whiteNav active"><a href="#tab1" aria-controls="tab1"
+					role="tab" data-toggle="tab">Most tweeted Hashtag</a></li>
+				<li onClick="changeAction(2)" role="presentation" class="whiteNa"><a
+					href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Map
+						by Hash</a></li>
+				<li onClick="changeAction(3)" role="presentation" class="whiteNa"><a
+					href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Unique
+						tweet</a></li>
+				<li onClick="changeAction(4)" role="presentation" class="whiteNa"><a
+					href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">Tweets
+						by source</a></li>
+				<li onClick="changeAction(6)" role="presentation" class="whiteNa"><a
+					href="#tab6" aria-controls="tab6" role="tab" data-toggle="tab">Nombre
+						retweets par tweet</a></li>
+
+			</ul>
+		</div>
+
+		<!-- Page  centrale -->
+		<div class="col-xs-10">
+			<!-- partie grise -->
+			<div class="row home-padding">
+				<!-- Input -->
+				<div class="col-xs-2 col-xs-offset-3">
+					<input type="text" class="form-control" placeholder="#hashtag"
+						id="hashtag">
+				</div>
+				<div class="col-xs-4">
+					<div class="input-group">
+						<button class="btn btn-default" type="button"
+							onClick="excuteAnalyse()">GO !</button>
 					</div>
 				</div>
-				<div class="tab-content">
-					<div role="tabpanel" class="tab-pane active" id="tab1"><%@ include file="./home/mostTweetedHash.jsp"%></div>
-					<div role="tabpanel" class="tab-pane" id="tab2"><%@ include file="./home/mapByHash.jsp"%></div>
-					<div role="tabpanel" class="tab-pane" id="tab3"><%@ include file="./home/uniqueTweet.jsp"%></div>
-					<div role="tabpanel" class="tab-pane" id="tab4"><%@ include file="./home/mapByHash.jsp"%></div>
-				</div>
+			</div>
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="tab1"><%@ include
+						file="./home/mostTweetedHash.jsp"%></div>
+				<div role="tabpanel" class="tab-pane" id="tab2"><%@ include
+						file="./home/mapByHash.jsp"%></div>
+				<div role="tabpanel" class="tab-pane" id="tab3"><%@ include
+						file="./home/uniqueTweet.jsp"%></div>
+				<div role="tabpanel" class="tab-pane" id="tab4"><%@ include
+						file="./home/tweetBySource.jsp"%></div>
+				<div role="tabpanel" class="tab-pane" id="tab6"><%@ include
+						file="./home/nbRetweetPerTweet.jsp"%></div>
 			</div>
 		</div>
+	</div>
 
 	<%@ include file="./common/resourcesJS.jsp"%>
 	<script src="http://code.highcharts.com/highcharts.js"></script>

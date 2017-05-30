@@ -1,0 +1,15 @@
+package container;
+
+import services.MostUserHashService;
+import services.ParsingService;
+import services.TweetByHashService;
+import services.UniqueTweetService;
+
+/**
+ * Container pour les services uniques 
+ * @author iness
+ */
+public class ContainerOfServices {
+	
+	
+}

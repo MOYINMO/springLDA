@@ -23,13 +23,15 @@ function parse(){
         type: 'GET',
         success: function(result) {
         	if(1 == ACTION){
-        		displayChart(result);
+        		displayMostUsedHashChart(result);
         	}else if(2 == ACTION){
         		displayMap(result);
         	}else if(3 == ACTION){
-        		
+        		displayUniqueTweetChart(result);
         	}else if(4 == ACTION){
-        		
+        		displaytweetBySources(result);
+        	}else if(6 == ACTION){
+        		displayNbRetweetPerTweet(result);
         	}
          }, error: function(e) {
          }
@@ -43,10 +45,82 @@ function parse(){
 }
 
 /**
+ * display chart for tweet by user
+ * @param result
+ * @returns
+ */
+function displaytweetBySources(result){
+	$("#tweetBySources").html = "";
+	var utilisateurs = [];
+	var occurences = [];
+	for(var hashtag in result.data){
+		utilisateurs.push(hashtag);
+		occurences.push(result.data[hashtag]);
+	}
+    var myChart = Highcharts.chart('tweetBySources', {
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Nombre de tweets uniques par utilisateurs'
+        },
+        xAxis: {
+            categories: utilisateurs
+        },
+        yAxis: {
+            title: {
+                text: 'Utilisateurs'
+            }
+        },
+        series: [{
+            name: 'Nombres de tweets uniques',
+            data: occurences
+        }]
+    });
+}
+
+/**
+ * display chart for nb Retweet for unique tweet
+ * @param result
+ * @returns
+ */
+
+
+function displayNbRetweetPerTweet(result){
+	$("#nbretweet").html = "";
+	var idTweet = [];
+	var nbRetweet = [];
+	for(var hashtag in result.data){
+		idTweet.push(hashtag);
+		nbRetweet.push(result.data[hashtag]);
+	}
+    var myChart = Highcharts.chart('nbretweet', {
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Nombre de retweets par tweet unique'
+        },
+        xAxis: {
+            categories: idTweet
+        },
+        yAxis: {
+            title: {
+                text: 'id tweet'
+            }
+        },
+        series: [{
+            name: 'Nombres de retweets par tweet unique',
+            data: nbRetweet
+        }]
+    });
+}
+
+/**
  * Affichage du graph
  * @returns
  */
-function displayChart(result){
+function displayMostUsedHashChart(result){
 	$("#chart").html = "";
 	var categories = [];
 	var occurences = [];
@@ -71,6 +145,40 @@ function displayChart(result){
         },
         series: [{
             name: 'hashtags',
+            data: occurences
+        }]
+    });
+}
+
+/**
+ * Display chart for tweet unique
+ * @returns
+ */
+function displayUniqueTweetChart(result){
+	$("#tweetUniqueChart").html = "";
+	var dates = [];
+	var occurences = [];
+	for(var jours in result.data){ 
+		dates.push(jours);
+		occurences.push(result.data[jours]);
+	}
+    var myChart = Highcharts.chart('tweetUniqueChart', {
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Nombre de tweets uniques par jours'
+        },
+        xAxis: {
+            categories: dates
+        },
+        yAxis: {
+            title: {
+                text: 'Dates'
+            }
+        },
+        series: [{
+            name: 'Nombres de tweets',
             data: occurences
         }]
     });

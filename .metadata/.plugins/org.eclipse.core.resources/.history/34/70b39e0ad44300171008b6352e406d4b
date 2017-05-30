@@ -1,0 +1,19 @@
+package jgibblda;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class StopWord {
+	List<String> listOfWords = new ArrayList<String>();
+	// adding some examples here (still comes from split in your case)
+	listOfWords.addAll(Arrays.asList("list", "of", "strings", "i", "am", "a", "list", "is", "remove", "stop", "there", "list"));
+	// defining an array of stop words (you probably want that as a constant somewhere else)
+	final String[] stopWords = {"of", "i", "am", "a", "is"};
+	// printing un-processed list
+	System.out.printf("Dirty: %s%n", listOfWords);
+	// invoking removeAll to remove all stop words
+	listOfWords.removeAll(Arrays.asList(stopWords));
+	// printing "clean" list
+	System.out.printf("Clean: %s%n", listOfWords);
+
+}

@@ -1,0 +1,22 @@
+package comparator;
+
+public class TweetByDateComparator {
+	private static TweetByDateComparator singleton;	
+	/**
+	 * private constructor
+	 */
+	private TweetByDateComparator(){
+		
+	}
+	
+	/**
+	 * Recuperation du singleton
+	 * @return
+	 */
+	public static TweetByDateComparator getSingleton(){
+		if(null == singleton){
+			singleton = new TweetByDateComparator();
+		}
+		return singleton;
+	}
+}

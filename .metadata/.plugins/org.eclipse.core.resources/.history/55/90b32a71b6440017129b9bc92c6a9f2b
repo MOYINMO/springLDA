@@ -1,0 +1,17 @@
+package services;
+
+import java.util.Calendar;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import entities.TweetEntity;
+
+/**
+ * @author iness
+ */
+public class UniqueTweetService {
+	
+
+
+}

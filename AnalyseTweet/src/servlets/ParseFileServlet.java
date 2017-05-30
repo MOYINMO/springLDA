@@ -18,12 +18,11 @@ import org.apache.commons.fileupload.FileUploadException;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
+import container.Container;
 import dao.TweetDAO;
 import entities.TweetEntity;
-import ram.DataRAM;
-import responses.MostTweetedHash;
-import responses.TweetByHash;
-import services.ParsingService;
+import responses.GenericListResponse;
+import responses.GenericMapResponse;
 import thread.AddTweetThread;
 import thread.DeleteTweetThread;
 
@@ -40,32 +39,37 @@ public class ParseFileServlet extends GenericServlet {
 	private final String UNIQUE_TWEET = "3";
 	private final String TWEET_UNIQUE_BY_SOURCES = "4";
 	private final String DELETE_BASE = "5";
+	private final String NOMBRE_TWEET_PER_RETWEET = "6";
 	
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String action = request.getParameter("action");
-		ParsingService parsingService = ParsingService.getSingleton();
 		switch(action){
 			case MOST_TWEETED_HASH :
-				MostTweetedHash mostTweetedHash = new MostTweetedHash();
-				mostTweetedHash.setData(parsingService.getMostUsed(parsingService.hashtagByValue(DataRAM.TWEETS), 20));
-				super.buildAndSend(response, mostTweetedHash, MostTweetedHash.class);
+				GenericMapResponse mostTweetedHash = new GenericMapResponse();
+				mostTweetedHash.setData(Container.mostUsedHashService.getMostPresent(Container.mostUsedHashService.hashtagByValue(Container.TWEETS), 40));
+				super.buildAndSend(response, mostTweetedHash, GenericMapResponse.class);
 				break;
 			case MAP_BY_HASH :
-				TweetByHash tweeByHash = new TweetByHash();
+				GenericListResponse tweeByHash = new GenericListResponse();
 				String hash = request.getParameter("hash");
-				tweeByHash.setData(parsingService.getMostUsedTweets(hash,DataRAM.TWEETS));
-				super.buildAndSend(response, tweeByHash, TweetByHash.class);
+				tweeByHash.setData(Container.tweetByHashService.getTweetByHash(hash,Container.TWEETS));
+				super.buildAndSend(response, tweeByHash, GenericListResponse.class);
 				break;
 			case UNIQUE_TWEET :
+				GenericMapResponse uniqueTweets = new GenericMapResponse();
+				uniqueTweets.setData(Container.uniqueTweetService.tweetUnique(Container.TWEETS));
+				super.buildAndSend(response, uniqueTweets, GenericMapResponse.class);
 				break;
 			case TWEET_UNIQUE_BY_SOURCES :
+				GenericMapResponse tweetBySource = new GenericMapResponse();
+				tweetBySource.setData(Container.tweetByUserService.getMostPresent(Container.tweetByUserService.getTweetByUser(Container.TWEETS), 40));
+				super.buildAndSend(response, tweetBySource, GenericMapResponse.class);
 				break;
 			case DELETE_BASE : 
-				DataRAM.TWEETS.clear();
-
+				Container.TWEETS.clear();
 				AsyncContext asyncContext = request.startAsync();
 		        asyncContext.start(new DeleteTweetThread() {
 		            @Override
@@ -74,6 +78,11 @@ public class ParseFileServlet extends GenericServlet {
 		            }
 		        });
 				break;
+			case NOMBRE_TWEET_PER_RETWEET:
+				GenericMapResponse nbRetweetByTweet = new GenericMapResponse();
+				nbRetweetByTweet.setData(Container.nombreTweetPerRetweetService.getMostPresent(Container.nombreTweetPerRetweetService.getNbRetweetPerTweet(Container.TWEETS), 40));
+				super.buildAndSend(response, nbRetweetByTweet, GenericMapResponse.class);
+				break;
 		}
 	}
 	
@@ -81,7 +90,6 @@ public class ParseFileServlet extends GenericServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		ParsingService parsingService = ParsingService.getSingleton();
 		try {
 			List<FileItem> items = new ServletFileUpload(new DiskFileItemFactory()).parseRequest(request);
 			for (FileItem item : items) {	        	
@@ -89,8 +97,8 @@ public class ParseFileServlet extends GenericServlet {
 	        		if(("file").equals(item.getFieldName())){
 	        			InputStreamReader stream = new InputStreamReader(item.getInputStream());
 	        			BufferedReader reader = new BufferedReader(stream);		
-	        			List<TweetEntity> tweets = parsingService.getAll(reader);
-	        			DataRAM.TWEETS.addAll(tweets);	        			
+	        			List<TweetEntity> tweets = Container.parsingService.getAll(reader);
+	        			Container.TWEETS.addAll(tweets);     			
 	        			AsyncContext asyncContext = request.startAsync();
 	    		        asyncContext.start(new AddTweetThread(tweets) {
 	    		            @Override

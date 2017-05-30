@@ -1,0 +1,28 @@
+package services;
+/**
+ * 
+ * @author iness
+ *
+ */
+public class NombreTweetPerRetweetService {
+	private static NombreTweetPerRetweetService singleton;
+	
+	/**
+	 * private constructor
+	 */
+	private NombreTweetPerRetweetService(){
+		
+	}
+	
+	/**
+	 * Recuperation du singleton
+	 * @return
+	 */
+	public static NombreTweetPerRetweetService getSingleton(){
+		if(null == singleton){
+			singleton = new NombreTweetPerRetweetService();
+		}
+		return singleton;
+	}
+
+}

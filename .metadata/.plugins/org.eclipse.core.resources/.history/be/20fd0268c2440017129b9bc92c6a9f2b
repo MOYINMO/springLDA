@@ -1,0 +1,60 @@
+package services;
+
+import java.util.Calendar;
+import java.util.List;
+
+/**
+ * @author iness
+ */
+public class GenericService {
+
+	/**
+	 * Index of
+	 * @param text
+	 * @param value
+	 * @return
+	 */
+	protected Integer indexOf(String text, char value){
+		int result = -1;
+		for(int i=0; i<text.length(); i++){
+			if(text.charAt(i) == value){
+				return i;
+			}
+		}
+		return result;				
+	}
+	
+	/**
+	 * get the min position
+	 * @param positions
+	 * @param length
+	 * @return
+	 */
+	protected Integer getMinPlace(List<Integer> positions, Integer length){
+		int result = length;
+		for(Integer position : positions){
+			if(result > position && position >0){
+				result = position;
+			}
+		}
+		return result;
+	}
+	
+	/**
+	 * Construire la date pour affichage
+	 * @param date
+	 * @return
+	 */
+	protected String buildDisplayDate(Calendar date){
+		String result = "";
+		if(null != date){
+			result = date.get(Calendar.DAY_OF_MONTH)+"/"+date.get(Calendar.MONTH)+"/"+date.get(Calendar.YEAR);
+		}
+		System.out.println("DAY === "+date.get(Calendar.DAY_OF_MONTH));
+		System.out.println("MONTH === "+date.get(Calendar.MONTH));
+		System.out.println("YEAR === "+date.get(Calendar.YEAR));
+		System.out.println(result);
+		return result;
+	}
+	
+}

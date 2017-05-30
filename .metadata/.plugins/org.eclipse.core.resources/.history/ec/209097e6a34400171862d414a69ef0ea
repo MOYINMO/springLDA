@@ -1,0 +1,22 @@
+package services;
+
+import java.io.FileNotFoundException;
+import java.util.Calendar;
+import java.util.List;
+import java.util.Map;
+
+import dao.TweetDAO;
+import entities.TweetEntity;
+
+public class Test {
+
+	public static void main(String args[]) throws FileNotFoundException {
+		UniqueTweet u = new UniqueTweet();
+		TweetDAO tweet = null ;
+		List<TweetEntity> tweets = tweet.getAll();
+		
+		
+		Map<Calendar,Integer> x= u.tweetUnique(tweets);
+
+	}
+}

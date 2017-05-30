@@ -1,0 +1,45 @@
+package comparator;
+
+import java.util.Comparator;
+import java.util.Map;
+
+/**
+ * Classe pour trier une map
+ * @author iness
+ *
+ */
+public class MapComparator implements Comparator<String> {
+	private static MapComparator singleton;	
+	/**
+	 * private constructor
+	 */
+	private MapComparator(){
+		
+	}
+	
+	/**
+	 * Recuperation du singleton
+	 * @return
+	 */
+	public static MapComparator getSingleton(){
+		if(null == singleton){
+			singleton = new MapComparator();
+		}
+		return singleton;
+	}
+	
+	Map<String, Integer> base;
+	
+	public MapComparator(Map<String, Integer> base) {
+		this.base = base;
+	}
+
+	public int compare(String a, String b) {
+		if (base.get(a) >= base.get(b)) {
+			return -1;
+		} else {
+			return 1;
+		}
+	}
+
+}

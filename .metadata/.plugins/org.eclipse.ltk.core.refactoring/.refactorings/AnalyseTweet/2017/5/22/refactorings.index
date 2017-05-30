@@ -1,0 +1,15 @@
+1496093513502	Delete element
+1496093550831	Rename type 'UniqueTweet'
+1496094404452	Rename package 'ram'
+1496094422038	Rename type 'DataRAM'
+1496094450583	Rename type 'containerOfData'
+1496094625195	Rename type 'ContainerOfData'
+1496094628229	Delete element
+1496095011162	Rename type 'MostTweetedHash'
+1496095017493	Rename type 'TweetByHash'
+1496095023237	Rename type 'UniqueTweet'
+1496095105003	Delete element
+1496099977803	Rename type 'MostUserHashService'
+1496100568336	Rename type 'UniqueTweetResponse'
+1496100617661	Delete element
+1496100640216	Rename type 'TweetByHashResponse'

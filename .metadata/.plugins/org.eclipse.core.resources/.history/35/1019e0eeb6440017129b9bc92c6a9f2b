@@ -1,0 +1,27 @@
+package services;
+
+
+/**
+ * @author iness
+ */
+public class MostUserHashService extends GenericService {
+	private static MostUserHashService singleton;
+	
+	/**
+	 * private constructor
+	 */
+	private MostUserHashService(){
+		
+	}
+	
+	/**
+	 * Recuperation du singleton
+	 * @return
+	 */
+	public static MostUserHashService getSingleton(){
+		if(null == singleton){
+			singleton = new MostUserHashService();
+		}
+		return singleton;
+	}
+}

@@ -1,0 +1,22 @@
+package comparator;
+
+public class TweetByDateComparator {
+	private static MapComparator singleton;	
+	/**
+	 * private constructor
+	 */
+	private MapComparator(){
+		
+	}
+	
+	/**
+	 * Recuperation du singleton
+	 * @return
+	 */
+	public static MapComparator getSingleton(){
+		if(null == singleton){
+			singleton = new MapComparator();
+		}
+		return singleton;
+	}
+}

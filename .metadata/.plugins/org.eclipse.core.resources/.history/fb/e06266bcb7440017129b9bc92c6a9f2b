@@ -1,0 +1,85 @@
+package servlets;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class GenericServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * Base directory pour les jsp
+	 */
+	public final static String FRAGMENT_DIRECTORY = "/WEB-INF/jsp/";
+	public final static String STATIC_FILES_DIRECTORY = "/assets";
+	
+	/**
+	 * envoyer en ajax un objet
+	 * @param response
+	 * @param obj
+	 * @param clazz
+	 */
+	protected void buildAndSend(HttpServletResponse response, Object obj, Class<?> clazz){
+		sendAjaxResponse(response, objectTojsonQuietly(obj, clazz));
+	}
+
+	/**
+	 * Methode de réponse JSON
+	 * @param response
+	 * @param json
+	 */
+	private void sendAjaxResponse(HttpServletResponse response, String json){
+		response.setContentType("application/json");
+	    response.setCharacterEncoding("UTF-8");
+	    try {
+			response.getWriter().write(json);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * Convertir un objet en JSON.
+	 * @param obj
+	 * @param clazz
+	 * @return String
+	 */
+	protected String objectTojsonQuietly(Object obj, Class<?> clazz) {
+		ObjectMapper mapper = new ObjectMapper();
+		String json = null;
+		try {
+			json = mapper.writeValueAsString(clazz.cast(obj));
+		} catch (JsonProcessingException e) {
+			e.printStackTrace();
+			System.out.println("error detected");
+		}
+		return json;
+	}
+	
+	/**
+	 * retourner une page
+	 * @param servlet
+	 * @param response
+	 * @param pageName
+	 */
+	protected void displayPage(HttpServletRequest request, HttpServletResponse response, String pageName){
+		try {
+			request.getServletContext().getRequestDispatcher(FRAGMENT_DIRECTORY+pageName+".jsp").forward(request, response);
+		} catch (ServletException | IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * creation des services
+	 */
+	protected void initServices(){
+		
+	}
+}

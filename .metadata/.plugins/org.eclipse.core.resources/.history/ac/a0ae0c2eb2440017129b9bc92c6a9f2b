@@ -1,0 +1,38 @@
+package services;
+
+import java.sql.Date;
+import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
+import entities.TweetEntity;
+
+public class UniqueTweet {
+	Map<Date, Integer> resultas = new HashMap<Date, Integer>();
+	String clef;
+	Integer valeur;
+	
+	public Map<Date,Integer> tweetUnique(List<TweetEntity> tweets){
+		
+		
+		for(TweetEntity tweet : tweets){
+			if(resultas.containsKey(tweet.getCreated())){
+				if(tweet.getIsRetweet()== false){
+					resultas.put(tweet.getCreated().getInstance(), resultas.get(tweet.getCreated())+1);
+				}
+				
+			}
+			if(resultas.containsKey(tweet.getCreated())== false){
+				if(tweet.getIsRetweet()== false){
+					resultas.put(tweet.getCreated(), 1);
+				}
+			}
+			}
+			
+		
+		return resultas;
+	}
+
+}

@@ -1,5 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="ram.DataRAM"/>
+<fullyQualifiedTypeName name="thread.DeleteTweetThread"/>
+<fullyQualifiedTypeName name="thread.AddTweetThread"/>
+<fullyQualifiedTypeName name="java.util.concurrent.ScheduledThreadPoolExecutor"/>
+<fullyQualifiedTypeName name="java.util.concurrent.ThreadPoolExecutor"/>
+<fullyQualifiedTypeName name="javax.servlet.AsyncContext"/>
+<fullyQualifiedTypeName name="java.util.concurrent.Future"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="sun.net.NetworkServer"/>
+<fullyQualifiedTypeName name="jgibblda.SopWord"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+<fullyQualifiedTypeName name="services.UniqueTweet"/>
+<fullyQualifiedTypeName name="dao.TweetDAO"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="services.GenericService"/>
+<fullyQualifiedTypeName name="services.MostUserHashService"/>
+<fullyQualifiedTypeName name="services.ParsingService"/>
+<fullyQualifiedTypeName name="services.TweetByHashService"/>
+<fullyQualifiedTypeName name="services.UniqueTweetService"/>
+<fullyQualifiedTypeName name="responses.UniqueTweetResponse"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="entities.TweetEntity"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="container.Container"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="comparator.TweetByDateComparator"/>
+<fullyQualifiedTypeName name="services.TweetByUserService"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
 </qualifiedTypeNameHistroy>

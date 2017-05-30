@@ -1,0 +1,15 @@
+package services;
+
+import java.io.FileNotFoundException;
+
+public class Test {
+
+	public static void main(String args[]) throws FileNotFoundException {
+		UniqueTweet u = new UniqueTweet();
+		ParsingService p;
+		p.getAll("/home/iness/Downloads/twitterListGoal11-11052017.csv");
+		
+		//u.tweetUnique();
+
+	}
+}

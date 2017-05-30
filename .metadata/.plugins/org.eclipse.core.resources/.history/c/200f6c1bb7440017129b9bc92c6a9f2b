@@ -1,0 +1,26 @@
+package services;
+
+import java.util.List;
+
+/**
+ * @author iness
+ */
+public class GenericService {
+
+	/**
+	 * get the min position
+	 * @param positions
+	 * @param length
+	 * @return
+	 */
+	protected Integer getMinPlace(List<Integer> positions, Integer length){
+		int result = length;
+		for(Integer position : positions){
+			if(result > position && position >0){
+				result = position;
+			}
+		}
+		return result;
+	}
+	
+}

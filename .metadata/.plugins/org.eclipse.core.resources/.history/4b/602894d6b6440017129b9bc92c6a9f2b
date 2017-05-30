@@ -1,0 +1,9 @@
+package services;
+
+
+/**
+ * @author iness
+ */
+public class MostUserHashService extends GenericService {
+
+}

@@ -1,0 +1,83 @@
+package services;
+
+import java.util.Calendar;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
+
+import comparator.MapComparator;
+
+/**
+ * @author iness
+ */
+public class GenericService {
+
+	/**
+	 * Index of
+	 * @param text
+	 * @param value
+	 * @return
+	 */
+	protected Integer indexOf(String text, char value){
+		int result = -1;
+		for(int i=0; i<text.length(); i++){
+			if(text.charAt(i) == value){
+				return i;
+			}
+		}
+		return result;				
+	}
+	
+	/**
+	 * get the min position
+	 * @param positions
+	 * @param length
+	 * @return
+	 */
+	protected Integer getMinPlace(List<Integer> positions, Integer length){
+		int result = length;
+		for(Integer position : positions){
+			if(result > position && position >0){
+				result = position;
+			}
+		}
+		return result;
+	}
+	
+	/**
+	 * Construire la date pour affichage
+	 * @param date
+	 * @return
+	 */
+	protected String buildDisplayDate(Calendar date){
+		String result = "";
+		if(null != date){
+			result = date.get(Calendar.DAY_OF_MONTH)+"/"+(date.get(Calendar.MONTH)+1)+"/"+date.get(Calendar.YEAR);
+		}
+		return result;
+	}
+	
+	/**
+	 * Get the maxResult most Used hashTag
+	 * @param allHash
+	 * @param maxresult
+	 * @return
+	 */
+	public Map<String, Integer>  getMostPresent(Map<String, Integer> allHash, Integer maxresult){
+		Map<String,Integer> mapTriee = new TreeMap<String,Integer>(new MapComparator(allHash));
+		Map<String,Integer> result = new HashMap<String,Integer>();
+		mapTriee.putAll(allHash);
+		int total = 0;
+		for(String key : mapTriee.keySet()){
+			result.put(key, allHash.get(key));
+			total++;
+			if(total>=maxresult){
+				return result;
+			}
+			
+		}
+		return mapTriee;
+	}
+	
+}

@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+
 public class GenericServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -18,7 +19,7 @@ public class GenericServlet extends HttpServlet {
 	 */
 	public final static String FRAGMENT_DIRECTORY = "/WEB-INF/jsp/";
 	public final static String STATIC_FILES_DIRECTORY = "/assets";
-	
+
 	/**
 	 * envoyer en ajax un objet
 	 * @param response

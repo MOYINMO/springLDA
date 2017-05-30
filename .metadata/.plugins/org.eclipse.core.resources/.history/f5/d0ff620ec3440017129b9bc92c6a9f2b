@@ -1,0 +1,39 @@
+package comparator;
+
+import java.util.Comparator;
+
+import entities.TweetEntity;
+
+/**
+ * Comparator tweet by calendar
+ * @author iness
+ *
+ */
+public class TweetByDateComparator implements Comparator<TweetEntity>{
+	private static TweetByDateComparator singleton;	
+	/**
+	 * private constructor
+	 */
+	private TweetByDateComparator(){
+		
+	}
+	
+	/**
+	 * Recuperation du singleton
+	 * @return
+	 */
+	public static TweetByDateComparator getSingleton(){
+		if(null == singleton){
+			singleton = new TweetByDateComparator();
+		}
+		return singleton;
+	}
+
+	@Override
+	public int compare(TweetEntity tweet1, TweetEntity tweet2) {
+		if (null != tweet1 && null != tweet2 && null != tweet1.getCreated() && null != tweet2.getCreated()) {
+			return tweet1.getCreated().compareTo(tweet2.getCreated());
+		}
+		return 0;
+	}
+}

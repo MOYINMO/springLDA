@@ -1,0 +1,16 @@
+package services;
+
+
+/**
+ * @author iness
+ */
+public class GenericService {
+
+	public static <T extends GenericService> getSingleton(){
+		if(null == singleton){
+			singleton = new ParsingService();
+		}
+		return singleton;
+	}
+	
+}

@@ -1,0 +1,75 @@
+@CHARSET "UTF-8";
+
+.home-body{
+	background-color : white;
+	height : 100% !important;
+}
+
+.home-padding{
+	padding-top : 35px;	
+	padding-bottom : 35px;
+	border : 1px solid #ccc;
+	background-color: #E5E5E5;
+}
+
+.home-chart {
+	height:800px;
+}
+
+#map {
+   height: 800px;
+}
+
+.leftMenu{
+	background-color : black;
+	min-height:1000px;
+	padding : 0px;
+}
+
+a{
+	color : white;
+}
+
+.whiteNav a{
+	width : 100%;
+	background-color : black;
+	color : white !important;
+	border-radius : 0px;
+}
+
+.whiteNav a:hover{
+	background-color : white;
+	color : black !important;
+}
+
+.nav-pills > li > a{
+	border-radius : 0px;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover{
+	background-color : white;
+	color : black !important;
+}
+
+.home-btn{
+	height : 106px;
+	background-color : white;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	text-align : center;
+	color : #ccc;
+	font-size :45px;
+	padding-top : 27px;
+	cursor : pointer;
+	transition : all 0.3s ease-in-out;
+}
+
+.home-btn:hover{
+	background-color : #E5E5E5;
+	color : white;
+	transition : all 0.3s ease-in-out;
+}
+
+.home-btn-left{
+	border-right : 1px solid #ccc;
+}

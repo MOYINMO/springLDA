@@ -1,0 +1,35 @@
+package services;
+
+import java.util.Calendar;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import entities.TweetEntity;
+
+/**
+ * @author iness
+ */
+public class UniqueTweetService extends GenericService {
+	private static UniqueTweetService singleton;
+	
+	/**
+	 * private constructor
+	 */
+	private UniqueTweetService(){
+		
+	}
+	
+	/**
+	 * Recuperation du singleton
+	 * @return
+	 */
+	public static UniqueTweetService getSingleton(){
+		if(null == singleton){
+			singleton = new UniqueTweetService();
+		}
+		return singleton;
+	}
+
+
+}
