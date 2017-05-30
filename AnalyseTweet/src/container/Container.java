@@ -9,6 +9,7 @@ import services.NombreTweetPerRetweetService;
 import services.ParsingService;
 import services.TweetByHashService;
 import services.TweetByUserService;
+import services.TweetPerObjectifService;
 import services.UniqueTweetService;
 
 /**
@@ -31,4 +32,5 @@ public class Container {
 	public static UniqueTweetService uniqueTweetService = UniqueTweetService.getSingleton();
 	public static TweetByUserService tweetByUserService = TweetByUserService.getSingleton();
 	public static NombreTweetPerRetweetService nombreTweetPerRetweetService = NombreTweetPerRetweetService.getSingleton();
+	public static TweetPerObjectifService tweetPerObjectifService = TweetPerObjectifService.getSingleton();
 }

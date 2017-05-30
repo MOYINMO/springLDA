@@ -1,0 +1,116 @@
+package servlets;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.List;
+
+import javax.servlet.AsyncContext;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.commons.fileupload.FileItem;
+import org.apache.commons.fileupload.FileUploadException;
+import org.apache.commons.fileupload.disk.DiskFileItemFactory;
+import org.apache.commons.fileupload.servlet.ServletFileUpload;
+
+import container.Container;
+import dao.TweetDAO;
+import entities.TweetEntity;
+import responses.GenericListResponse;
+import responses.GenericMapResponse;
+import thread.AddTweetThread;
+import thread.DeleteTweetThread;
+
+/**
+ * Servlet implementation class ParseFileServlet
+ */
+@WebServlet(urlPatterns={"/parse"}, asyncSupported=true)
+@MultipartConfig
+public class ParseFileServlet extends GenericServlet {
+	private static final long serialVersionUID = 1L;
+    
+	private final String MOST_TWEETED_HASH = "1";
+	private final String MAP_BY_HASH = "2";
+	private final String UNIQUE_TWEET = "3";
+	private final String TWEET_UNIQUE_BY_SOURCES = "4";
+	private final String DELETE_BASE = "5";
+	private final String NOMBRE_TWEET_PER_RETWEET = "6";
+	
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String action = request.getParameter("action");
+		switch(action){
+			case MOST_TWEETED_HASH :
+				GenericMapResponse mostTweetedHash = new GenericMapResponse();
+				mostTweetedHash.setData(Container.mostUsedHashService.getMostPresent(Container.mostUsedHashService.hashtagByValue(Container.TWEETS), 40));
+				super.buildAndSend(response, mostTweetedHash, GenericMapResponse.class);
+				break;
+			case MAP_BY_HASH :
+				GenericListResponse tweeByHash = new GenericListResponse();
+				String hash = request.getParameter("hash");
+				tweeByHash.setData(Container.tweetByHashService.getTweetByHash(hash,Container.TWEETS));
+				super.buildAndSend(response, tweeByHash, GenericListResponse.class);
+				break;
+			case UNIQUE_TWEET :
+				GenericMapResponse uniqueTweets = new GenericMapResponse();
+				uniqueTweets.setData(Container.uniqueTweetService.tweetUnique(Container.TWEETS));
+				super.buildAndSend(response, uniqueTweets, GenericMapResponse.class);
+				break;
+			case TWEET_UNIQUE_BY_SOURCES :
+				GenericMapResponse tweetBySource = new GenericMapResponse();
+				tweetBySource.setData(Container.tweetByUserService.getMostPresent(Container.tweetByUserService.getTweetByUser(Container.TWEETS), 40));
+				super.buildAndSend(response, tweetBySource, GenericMapResponse.class);
+				break;
+			case DELETE_BASE : 
+				Container.TWEETS.clear();
+				AsyncContext asyncContext = request.startAsync();
+		        asyncContext.start(new DeleteTweetThread() {
+		            @Override
+		            public void run() {
+		            	TweetDAO.getSingleton().deleteAll();
+		            }
+		        });
+				break;
+			case NOMBRE_TWEET_PER_RETWEET:
+				GenericMapResponse nbRetweetByTweet = new GenericMapResponse();
+				nbRetweetByTweet.setData(Container.nombreTweetPerRetweetService.getMostPresent(Container.nombreTweetPerRetweetService.getNbRetweetPerTweet(Container.TWEETS), 40));
+				super.buildAndSend(response, nbRetweetByTweet, GenericMapResponse.class);
+				break;
+		}
+	}
+	
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		try {
+			List<FileItem> items = new ServletFileUpload(new DiskFileItemFactory()).parseRequest(request);
+			for (FileItem item : items) {	        	
+	        	if (!item.isFormField()) {
+	        		if(("file").equals(item.getFieldName())){
+	        			InputStreamReader stream = new InputStreamReader(item.getInputStream());
+	        			BufferedReader reader = new BufferedReader(stream);		
+	        			List<TweetEntity> tweets = Container.parsingService.getAll(reader);
+	        			Container.TWEETS.addAll(tweets);     			
+	        			AsyncContext asyncContext = request.startAsync();
+	    		        asyncContext.start(new AddTweetThread(tweets) {
+	    		            @Override
+	    		            public void run() {
+	    		            	TweetDAO.getSingleton().createFromFile(tweets);  
+	    		            }
+	    		        });		
+	        		}
+	            }
+	        }
+		} catch (FileUploadException | IOException e1) {
+			System.out.println(e1.getMessage());
+		}
+	}
+}

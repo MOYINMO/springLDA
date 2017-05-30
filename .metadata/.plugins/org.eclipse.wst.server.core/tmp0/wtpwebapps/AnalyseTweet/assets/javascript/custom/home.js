@@ -32,6 +32,8 @@ function parse(){
         		displaytweetBySources(result);
         	}else if(6 == ACTION){
         		displayNbRetweetPerTweet(result);
+        	}else if(7== ACTION){
+        		displayNbTweetPerObjectif(result);
         	}
          }, error: function(e) {
          }
@@ -43,6 +45,14 @@ function parse(){
 	}	
 	return false;
 }
+function displayNbTweetPerObjectif(result){
+	var i=0;
+	for(var tweet in result.data){
+		i++;
+	}
+	alert(i);
+}
+
 
 /**
  * display chart for tweet by user
@@ -222,7 +232,7 @@ function displayMap(result){
  */
 function changeAction(choix){
 	ACTION = choix;
-	if(ACTION == 2){
+	if(ACTION == 2|| ACTION == 7){
 		$("#hashtag").slideDown("speed");
 	}else{
 		$("#hashtag").slideUp("speed");

@@ -48,6 +48,9 @@
 				<li onClick="changeAction(6)" role="presentation" class="whiteNa"><a
 					href="#tab6" aria-controls="tab6" role="tab" data-toggle="tab">Nombre
 						retweets par tweet</a></li>
+				<li onClick="changeAction(7)" role="presentation" class="whiteNa"><a
+					href="#tab7" aria-controls="tab7" role="tab" data-toggle="tab">Nombre
+						de tweets par objectif</a></li>
 
 			</ul>
 		</div>
@@ -79,6 +82,8 @@
 						file="./home/tweetBySource.jsp"%></div>
 				<div role="tabpanel" class="tab-pane" id="tab6"><%@ include
 						file="./home/nbRetweetPerTweet.jsp"%></div>
+				<div role="tabpanel" class="tab-pane" id="tab6"><%@ include
+						file="./home/nbRetweetPerObjectif.jsp"%></div>
 			</div>
 		</div>
 	</div>

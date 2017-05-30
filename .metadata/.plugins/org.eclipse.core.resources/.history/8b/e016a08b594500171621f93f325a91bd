@@ -1,0 +1,42 @@
+package services;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import entities.TweetEntity;
+
+public class TweetPerObjectifService {
+private static TweetPerObjectifService singleton;
+	
+	/**
+	 * private constructor
+	 */
+	private TweetPerObjectifService(){
+		
+	}
+	
+	public static TweetPerObjectifService getSingleton(){
+		if(null == singleton){
+			singleton = new TweetPerObjectifService();
+		}
+		return singleton;
+	}
+	
+	/**
+	 * Get the tweets who constains the objectif
+	 * @param allHash
+	 * @param tweets
+	 * @return
+	 */
+	public Integer getTweetByObjectif(String hash, List<TweetEntity> tweets){
+		List<TweetEntity> result = new ArrayList<TweetEntity>();
+		Integer i=0;
+		for(TweetEntity tweet : tweets){
+			if(tweet.getText().contains(hash)){
+				result.add(tweet)
+			}	
+		}
+		return i;
+	}
+
+}

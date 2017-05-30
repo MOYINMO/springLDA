@@ -1,0 +1,28 @@
+package responses;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+import entities.TweetEntity;
+
+public class GenericIntegerResponse implements Serializable { {
+		final long serialVersionUID = 1L;
+		Integer data=0 ;
+
+		/**
+		 * @return the data
+		 */
+		public Integer getData() {
+			return data;
+		}
+
+		/**
+		 * @param data the data to set
+		 */
+		public void setData(Integer data) {
+			this.data = data;
+		}
+		
+	}
+}

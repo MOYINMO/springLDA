@@ -40,6 +40,7 @@ public class ParseFileServlet extends GenericServlet {
 	private final String TWEET_UNIQUE_BY_SOURCES = "4";
 	private final String DELETE_BASE = "5";
 	private final String NOMBRE_TWEET_PER_RETWEET = "6";
+	private final String TWEET_PER_objectif = "7";
 	
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
@@ -82,6 +83,14 @@ public class ParseFileServlet extends GenericServlet {
 				GenericMapResponse nbRetweetByTweet = new GenericMapResponse();
 				nbRetweetByTweet.setData(Container.nombreTweetPerRetweetService.getMostPresent(Container.nombreTweetPerRetweetService.getNbRetweetPerTweet(Container.TWEETS), 40));
 				super.buildAndSend(response, nbRetweetByTweet, GenericMapResponse.class);
+				break;
+				
+			case TWEET_PER_objectif :
+				GenericListResponse tweetPerobjectif = new GenericListResponse();
+				String objectif = request.getParameter("hash");
+				tweetPerobjectif.setData(Container.tweetPerObjectifService.getTweetByObjectif(objectif,Container.TWEETS));
+				System.out.println(Container.tweetPerObjectifService.getTweetByObjectif(objectif,Container.TWEETS));
+				super.buildAndSend(response,tweetPerobjectif , GenericListResponse.class);
 				break;
 		}
 	}
