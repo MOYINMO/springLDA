@@ -1,0 +1,29 @@
+package services;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
+
+/**
+ * @author iness
+ */
+public class GenericService {
+
+	
+	/**
+	 * Pars List from array
+	 * @param elts
+	 * @return
+	 */
+	protected <E> List<? extends E> listFromArray(E[] elts){
+		List<E> result = new ArrayList<E>();
+		for(E elt : elts){
+			result.add(elt);
+		}
+		return result;
+	}
+	
+}

@@ -1,0 +1,14 @@
+package services;
+
+import java.io.FileOutputStream;
+import java.util.List;
+
+import entities.TweetEntity;
+
+public class FichierLDA {
+	public FileOutputStream parseLDA(List<TweetEntity> tweets) {
+
+		return null;
+	}
+
+}

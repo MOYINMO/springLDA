@@ -1,10 +1,6 @@
 INDEX VERSION 1.3+/home/iness/springLDA/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
-517389068.index
-3125776347.index
 155380277.index
-517389068.index
-2280115907.index
 298839565.index
 3130179777.index
-1675592648.index
 3783650887.index
+1675592648.index

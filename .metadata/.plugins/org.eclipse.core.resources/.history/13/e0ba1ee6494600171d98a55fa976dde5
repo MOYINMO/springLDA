@@ -1,0 +1,23 @@
+package services;
+
+import java.util.ArrayList;
+
+/**
+ * @author iness
+ */
+public class GenericService {
+
+	/**
+	 * Pars List from array
+	 * @param elts
+	 * @return
+	 */
+	protected <E> List<? extends E> listFromArray(E[] elts){
+		List<E> result = new ArrayList<E>();
+		for(E elt : elts){
+			result.add(elt);
+		}
+		return result;
+	}
+	
+}
